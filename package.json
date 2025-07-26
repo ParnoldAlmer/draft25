@@ -1,0 +1,28 @@
+{
+  "name": "draft25",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.html",
+    "lint:fix": "eslint index.html --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParnoldAlmer/draft25.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ParnoldAlmer/draft25/issues"
+  },
+  "homepage": "https://github.com/ParnoldAlmer/draft25#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-html": "^8.1.3"
+  }
+}

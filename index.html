@@ -1268,11 +1268,13 @@
             });
         }
 
-        function filterPlayers(position) {
+        function filterPlayers(position, event) {
             currentFilter = position;
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
             
             let filtered = players;
             if (position !== 'all') {
@@ -1744,7 +1746,7 @@
             if (event.target === combineModal) {
                 combineModal.style.display = 'none';
             }
-        }
+        };
 
         // Start countdown
         updateCountdown();
