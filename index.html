@@ -225,6 +225,56 @@
             width: 8px;
         }
 
+        /* USC Card Theme */
+        .player-card.usc-card {
+            background: linear-gradient(135deg, #8B1538 0%, #FFC62F 100%);
+            border: 2px solid #FFC62F;
+            box-shadow: 0 4px 12px rgba(255, 198, 47, 0.3);
+        }
+
+        .player-card.usc-card::before {
+            background: linear-gradient(180deg, #FFC62F 0%, #8B1538 100%);
+            width: 6px;
+        }
+
+        .player-card.usc-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(255, 198, 47, 0.4), 0 0 25px rgba(139, 21, 56, 0.3);
+        }
+
+        .player-card.usc-card:hover::before {
+            width: 12px;
+        }
+
+        .player-card.usc-card .player-name {
+            color: #FFC62F;
+            text-shadow: 1px 1px 2px rgba(139, 21, 56, 0.8);
+        }
+
+        .player-card.usc-card .team-info {
+            color: #FFC62F;
+            font-weight: bold;
+        }
+
+        .player-card.usc-card .draft-pick {
+            background: #FFC62F;
+            color: #8B1538;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .player-card.usc-card .ranking-badge {
+            background: rgba(255, 198, 47, 0.9);
+            color: #8B1538;
+            font-weight: bold;
+            border: 1px solid #8B1538;
+        }
+
+        .player-card.usc-card .position-tag {
+            background: #8B1538;
+            color: #FFC62F;
+            border: 1px solid #FFC62F;
+        }
+
         .player-header {
             display: flex;
             justify-content: space-between;
@@ -2246,7 +2296,7 @@
             
             playersToRender.forEach(player => {
                 const card = document.createElement('div');
-                card.className = 'player-card';
+                card.className = player.college === 'USC' ? 'player-card usc-card' : 'player-card';
                 card.onclick = () => showPlayerModal(player);
                 
                 card.innerHTML = `
@@ -2419,6 +2469,18 @@
         
         // Changelog data
         const changelogData = [
+            {
+                version: "v3.0",
+                date: "2024-12-19",
+                title: "USC Card Theme & Visual Enhancement",
+                description: "Added distinctive USC Trojans-themed card styling with cardinal and gold colors",
+                features: [
+                    "USC players now have special cardinal and gold gradient card theme",
+                    "Enhanced USC card hover effects with glow and shadow animations",
+                    "USC-specific styling for player names, rankings, and position badges",
+                    "Automatic detection and application of USC theme for all USC players"
+                ]
+            },
             {
                 version: "v2.9",
                 date: "2024-12-19",
