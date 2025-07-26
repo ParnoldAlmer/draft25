@@ -200,9 +200,9 @@
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
             position: relative;
             overflow: hidden;
+            min-height: 400px;
         }
 
         .player-card::before {
@@ -273,6 +273,121 @@
             background: #8B1538;
             color: #FFC62F;
             border: 1px solid #FFC62F;
+        }
+
+        /* Expanded Card Styles */
+        .player-details {
+            margin: 8px 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .player-details .college {
+            font-weight: bold;
+            color: var(--highlight);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .player-details .draft-info {
+            color: var(--text);
+            opacity: 0.8;
+            font-size: 0.85em;
+        }
+
+        .overall-rank {
+            background: var(--gold);
+            color: var(--primary);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .player-measurements {
+            display: flex;
+            gap: 15px;
+            margin: 15px 0;
+            font-size: 0.9em;
+            opacity: 0.8;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .player-measurements span {
+            background: rgba(255,255,255,0.1);
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-size: 0.8em;
+        }
+
+        .strengths-weaknesses {
+            margin: 15px 0;
+        }
+
+        .strengths-weaknesses .strengths,
+        .strengths-weaknesses .weaknesses {
+            margin-bottom: 15px;
+        }
+
+        .strengths-weaknesses h4 {
+            font-size: 0.85em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .strengths-weaknesses .strengths h4 {
+            color: var(--green);
+        }
+
+        .strengths-weaknesses .weaknesses h4 {
+            color: var(--red);
+        }
+
+        .strengths-weaknesses ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.8em;
+            line-height: 1.4;
+        }
+
+        .strengths-weaknesses li {
+            margin-bottom: 6px;
+            padding-left: 12px;
+            position: relative;
+        }
+
+        .strengths ul li::before {
+            content: "✓";
+            color: var(--green);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .weaknesses ul li::before {
+            content: "⚠";
+            color: var(--red);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .player-comp {
+            background: rgba(255,255,255,0.05);
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            margin-top: 10px;
+            border-left: 3px solid var(--highlight);
+        }
+
+        .player-comp strong {
+            color: var(--highlight);
         }
 
         .player-header {
@@ -626,13 +741,6 @@
                 <li><strong>TE Flex:</strong> TEs like Loveland provide solid flex utility in deeper leagues</li>
                 <li><strong>Sleepers:</strong> Quinshon Judkins (RB, Browns), Emeka Egbuka (WR, Buccaneers), Jihaad Campbell (LB, Saints)</li>
             </ul>
-        </div>
-    </div>
-
-    <div class="modal" id="playerModal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <div id="modalContent"></div>
         </div>
     </div>
 
@@ -2297,30 +2405,40 @@
             playersToRender.forEach(player => {
                 const card = document.createElement('div');
                 card.className = player.college === 'USC' ? 'player-card usc-card' : 'player-card';
-                card.onclick = () => showPlayerModal(player);
+                // Removed modal click handler - all info now displayed on card
                 
                 card.innerHTML = `
                     <div class="player-header">
                         <div>
                             <div class="player-name">${player.name}</div>
-                            ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 5px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 5px;">${player.position}</div>`}
+                            <div class="player-details">
+                                <span class="college">${player.college}</span>
+                                <span class="draft-info">${player.pick} • ${player.team}</span>
+                            </div>
+                            ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 8px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 8px;">${player.position}</div>`}
                         </div>
-                        <div class="draft-pick">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
+                        <div class="overall-rank">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
                     </div>
-                    <div class="player-info">
-                        <div>${player.college}</div>
-                        <div>${player.team}</div>
-                        <div>${player.height}</div>
-                        <div>${player.weight}</div>
+                    <div class="player-measurements">
+                        <span>${player.height}</span>
+                        <span>${player.weight}</span>
                     </div>
-                    <div class="strengths">
-                        <h4>Strengths</h4>
-                        <ul>
-                            ${player.strengths.slice(0, 2).map(s => `<li>${s}</li>`).join('')}
-                        </ul>
+                    <div class="strengths-weaknesses">
+                        <div class="strengths">
+                            <h4>✅ Strengths</h4>
+                            <ul>
+                                ${player.strengths.map(s => `<li>${s}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="weaknesses">
+                            <h4>⚠️ Weaknesses</h4>
+                            <ul>
+                                ${player.weaknesses.map(w => `<li>${w}</li>`).join('')}
+                            </ul>
+                        </div>
                     </div>
                     <div class="player-comp">
-                        <strong>Comp:</strong> ${player.comp}
+                        <strong>🎯 Comparison:</strong> ${player.comp}
                     </div>
                 `;
                 
@@ -2377,61 +2495,7 @@
             renderPlayers(filtered);
         }
 
-        function showPlayerModal(player) {
-            const modal = document.getElementById('playerModal');
-            const content = document.getElementById('modalContent');
-            
-            content.innerHTML = `
-                <h2>${player.name}</h2>
-                ${player.overallRank || player.positionRank ? `<div class="ranking-container" style="margin: 15px 0;">
-                    ${player.overallRank ? `<span class="ranking-badge overall">#${player.overallRank} Overall</span>` : ''}
-                    ${player.positionRank ? `<span class="ranking-badge position">#${player.positionRank} ${player.position}</span>` : `<span class="ranking-badge position">${player.position}</span>`}
-                </div>` : `<div class="ranking-container" style="margin: 15px 0;">
-                    <span class="ranking-badge position">${player.position}</span>
-                </div>`}
-                <span class="position-badge ${getPositionClass(player.position)}">${player.position}</span>
-                <div class="draft-pick" style="display: inline-block; margin-left: 10px;">${player.pick}</div>
-                
-                <div class="player-info" style="margin: 20px 0;">
-                    <div><strong>College:</strong> ${player.college}</div>
-                    <div><strong>NFL Team:</strong> ${player.team}</div>
-                    <div><strong>Height:</strong> ${player.height}</div>
-                    <div><strong>Weight:</strong> ${player.weight}</div>
-                </div>
-                
-                <div class="strengths">
-                    <h4>Strengths</h4>
-                    <ul>
-                        ${player.strengths.map(s => `<li>${s}</li>`).join('')}
-                    </ul>
-                </div>
-                
-                <div class="weaknesses">
-                    <h4>Weaknesses</h4>
-                    <ul>
-                        ${player.weaknesses.map(w => `<li>${w}</li>`).join('')}
-                    </ul>
-                </div>
-                
-                <div class="player-comp" style="margin-top: 20px;">
-                    <strong>Player Comparison:</strong> ${player.comp}
-                </div>
-            `;
-            
-            modal.style.display = 'block';
-        }
-
-        function closeModal() {
-            document.getElementById('playerModal').style.display = 'none';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('playerModal');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        }
+        // Player modal functionality removed - all info now displayed on cards
 
         // Countdown Timer
         function updateCountdown() {
@@ -2469,6 +2533,19 @@
         
         // Changelog data
         const changelogData = [
+            {
+                version: "v3.1",
+                date: "2024-12-19",
+                title: "Expanded Card Layout - No More Clicking!",
+                description: "Refactored player cards to display all information directly, eliminating modal popups",
+                features: [
+                    "All player information now visible on cards (strengths, weaknesses, comparisons)",
+                    "Removed modal popup system - no more clicking required",
+                    "Enhanced card layout with improved typography and spacing",
+                    "Added visual indicators for strengths (✓) and weaknesses (⚠) with color coding",
+                    "Streamlined draft day experience with all data at a glance"
+                ]
+            },
             {
                 version: "v3.0",
                 date: "2024-12-19",
@@ -2659,12 +2736,8 @@
 
         // Update modal click handler to include changelog modal
         window.onclick = function(event) {
-            const playerModal = document.getElementById('playerModal');
             const changelogModal = document.getElementById('changelogModal');
             
-            if (event.target === playerModal) {
-                playerModal.style.display = 'none';
-            }
             if (event.target === changelogModal) {
                 changelogModal.style.display = 'none';
             }
