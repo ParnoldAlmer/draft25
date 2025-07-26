@@ -2500,5 +2500,511 @@
       "Inconsistent tackling technique"
     ],
     "comp": "Rasul Douglas × Charvarius Ward"
+  },
+  {
+    "name": "Mason Graham",
+    "position": "DT",
+    "college": "Michigan",
+    "team": "Cleveland Browns",
+    "pick": "#5",
+    "height": "6'3\"",
+    "weight": "318 lbs",
+    "arm": "32 7/8\"",
+    "hand": "10 1/4\"",
+    "age": 21,
+    "hometown": "Anaheim, CA",
+    "overallRank": 113,
+    "positionRank": 1,
+    "strengths": [
+      "Fast, violent, relentless; can stop the run with great strength",
+      "High floor at all times and high ceiling in flashes as a 3-technique",
+      "Elite leverage and motor; consistent disruptor for IDP sacks/TFLs (3.5 pts each)"
+    ],
+    "weaknesses": [
+      "Shorter-than-ideal arms for an NFL interior defensive lineman",
+      "Limited bend; injury history from college",
+      "Needs to add pass-rush counters"
+    ],
+    "comp": "Aaron Donald × Javon Hargrave"
+  },
+  {
+    "name": "Walter Nolen",
+    "position": "DT",
+    "college": "Ole Miss",
+    "team": "Arizona Cardinals",
+    "pick": "#16",
+    "height": "6'3\"",
+    "weight": "290 lbs",
+    "age": 21,
+    "hometown": "Cordova, TN",
+    "overallRank": 114,
+    "positionRank": 2,
+    "strengths": [
+      "Physically gifted; high floor due to strength in run defense",
+      "Versatile defensive tackle with potential for impact",
+      "Strong anchor vs doubles; IDP stuffs potential (3.5 pts)"
+    ],
+    "weaknesses": [
+      "Not the most polished interior defender",
+      "Raw hand usage; inconsistent leverage",
+      "Needs polish in technique"
+    ],
+    "comp": "Jeffery Simmons × Christian Wilkins"
+  },
+  {
+    "name": "Kenneth Grant",
+    "position": "DT",
+    "college": "Michigan",
+    "team": "Miami Dolphins",
+    "pick": "#13",
+    "height": "6'3\"",
+    "weight": "339 lbs",
+    "age": 21,
+    "hometown": "Merrillville, IN",
+    "overallRank": 115,
+    "positionRank": 3,
+    "strengths": [
+      "Rare combination of quickness and size at nose tackle",
+      "Strength to dominate single blocks and hold up against doubles",
+      "Imposing when in attack mode; IDP run-stopper (tackles 1.25/0.75 pts)"
+    ],
+    "weaknesses": [
+      "Aggressive mindset not consistently shown",
+      "Limited pass-rush; conditioning questions",
+      "Physical limitations with size"
+    ],
+    "comp": "Quinnen Williams × Vita Vea"
+  },
+  {
+    "name": "Derrick Harmon",
+    "position": "DT",
+    "college": "Oregon",
+    "team": "Pittsburgh Steelers",
+    "pick": "#21",
+    "height": "6'5\"",
+    "weight": "310 lbs",
+    "age": 22,
+    "hometown": "Detroit, MI",
+    "overallRank": 116,
+    "positionRank": 4,
+    "strengths": [
+      "High football IQ, consistent competitiveness, NFL-level quickness",
+      "Effective 3-technique for an even front",
+      "High potential for interior pressure and IDP disruptions"
+    ],
+    "weaknesses": [
+      "Only one year of notable production",
+      "Limited pass-rush variety",
+      "Stamina issues in long drives"
+    ],
+    "comp": "Calais Campbell × Sheldon Rankins"
+  },
+  {
+    "name": "Tyleik Williams",
+    "position": "DT", 
+    "college": "Ohio State",
+    "team": "Detroit Lions",
+    "pick": "#28",
+    "height": "6'3\"",
+    "weight": "327 lbs",
+    "age": 22,
+    "hometown": "Manassas, VA",
+    "overallRank": 117,
+    "positionRank": 5,
+    "strengths": [
+      "Compact and powerful; excels at holding the line of scrimmage",
+      "Likely a Day 2 selection as a nose tackle",
+      "Strong run defender for IDP stuffs (3.5 pts)"
+    ],
+    "weaknesses": [
+      "Lack of pass-rush production",
+      "Limited athleticism; straight-line mover",
+      "Injury-prone throughout college"
+    ],
+    "comp": "Kenny Clark × Grover Stewart"
+  },
+  {
+    "name": "T.J. Sanders",
+    "position": "DT",
+    "college": "South Carolina",
+    "team": "Buffalo Bills",
+    "pick": "#73",
+    "height": "6'4\"",
+    "weight": "290 lbs",
+    "age": 21,
+    "hometown": "Marion, SC",
+    "overallRank": 118,
+    "positionRank": 6,
+    "strengths": [
+      "True 3-technique who wins with linear and lateral quickness",
+      "Contributing rotational 3-technique at worst",
+      "Upside for gap-shooting disruptions in IDP"
+    ],
+    "weaknesses": [
+      "Must improve hand precision and play strength",
+      "Raw technique needs development",
+      "Can be inconsistent"
+    ],
+    "comp": "Ed Oliver × Javon Kinlaw"
+  },
+  {
+    "name": "Omarr Norman-Lott",
+    "position": "DT",
+    "college": "Tennessee", 
+    "team": "Kansas City Chiefs",
+    "pick": "#60",
+    "height": "6'3\"",
+    "weight": "315 lbs",
+    "age": 22,
+    "hometown": "Houston, TX",
+    "overallRank": 119,
+    "positionRank": 7,
+    "strengths": [
+      "Athletically gifted, undersized 3-technique with NFL potential",
+      "High grades and win rates suggest contributing starter",
+      "Ability to collapse pockets for IDP pressures"
+    ],
+    "weaknesses": [
+      "Snap counts and stats may underrepresent potential",
+      "Needs better hand usage and pass-rush plans",
+      "Limited pass-rush production"
+    ],
+    "comp": "Grady Jarrett × Larry Ogunjobi"
+  },
+  {
+    "name": "Deone Walker",
+    "position": "DT",
+    "college": "Kentucky",
+    "team": "Chicago Bears",
+    "pick": "#39",
+    "height": "6'6\"",
+    "weight": "345 lbs",
+    "age": 21,
+    "hometown": "Detroit, MI",
+    "overallRank": 120,
+    "positionRank": 8,
+    "strengths": [
+      "Pass rush ability; high potential as nose tackle",
+      "Giant frame anchors vs doubles",
+      "Massive run defender for IDP stuffs (3.5 pts)"
+    ],
+    "weaknesses": [
+      "Film shows clear limitations on pass rush",
+      "Slow first step; conditioning concerns",
+      "Limited athletic ceiling"
+    ],
+    "comp": "Dexter Lawrence × A'Shawn Robinson"
+  },
+  {
+    "name": "Brandon Dorlus",
+    "position": "DT",
+    "college": "Oregon",
+    "team": "Atlanta Falcons",
+    "pick": "#109",
+    "height": "6'3\"",
+    "weight": "285 lbs",
+    "age": 23,
+    "hometown": "Portland, OR",
+    "overallRank": 121,
+    "positionRank": 9,
+    "strengths": [
+      "Versatile DL; quick first step disrupts",
+      "Can play multiple positions for IDP value",
+      "Upside in pass rush with length"
+    ],
+    "weaknesses": [
+      "Inconsistent motor; average production",
+      "Scheme fit issues",
+      "Needs to develop pass-rush moves"
+    ],
+    "comp": "DeForest Buckner × Cameron Jordan"
+  },
+  {
+    "name": "Darius Alexander",
+    "position": "DT",
+    "college": "Toledo",
+    "team": "New York Giants",
+    "pick": "#100",
+    "height": "6'4\"",
+    "weight": "310 lbs",
+    "age": 25,
+    "hometown": "Toledo, OH",
+    "overallRank": 122,
+    "positionRank": 10,
+    "strengths": [
+      "Impressive physical traits and significant upside",
+      "High-caliber measurables/strength; contributing at worst",
+      "Starting potential in odd/even fronts for IDP"
+    ],
+    "weaknesses": [
+      "Late bloomer (age 25 rookie)",
+      "Small-school adjustment",
+      "Needs to prove vs NFL competition"
+    ],
+    "comp": "Javon Hargrave × Kenny Clark"
+  },
+  {
+    "name": "C.J. West",
+    "position": "DT",
+    "college": "Indiana",
+    "team": "Buffalo Bills",
+    "pick": "#128",
+    "height": "6'4\"",
+    "weight": "290 lbs",
+    "age": 22,
+    "hometown": "Indianapolis, IN",
+    "overallRank": 123,
+    "positionRank": 11,
+    "strengths": [
+      "Good size (mass) and burst as nose tackle",
+      "Strong reps in run defense and some pass-rush impact",
+      "Rotational player with IDP potential"
+    ],
+    "weaknesses": [
+      "Limited speed; not a YAC creator for DL",
+      "Needs to prove vs NFL level",
+      "Average athleticism"
+    ],
+    "comp": "Vita Vea × Linval Joseph"
+  },
+  {
+    "name": "Alfred Collins",
+    "position": "DT",
+    "college": "Texas",
+    "team": "Seattle Seahawks",
+    "pick": "#102",
+    "height": "6'5\"",
+    "weight": "320 lbs",
+    "age": 22,
+    "hometown": "Bastrop, TX",
+    "overallRank": 124,
+    "positionRank": 12,
+    "strengths": [
+      "Dominates the run game with rare power",
+      "Processing speed translates to NFL",
+      "Space-eater for IDP stuffs (3.5 pts)"
+    ],
+    "weaknesses": [
+      "Limited pass-rush production",
+      "Needs to improve hand usage",
+      "Average athleticism"
+    ],
+    "comp": "A'Shawn Robinson × Davon Godchaux"
+  },
+  {
+    "name": "Josiah Stewart",
+    "position": "DT",
+    "college": "Michigan",
+    "team": "Buffalo Bills",
+    "pick": "#128",
+    "height": "6'3\"",
+    "weight": "290 lbs",
+    "age": 21,
+    "hometown": "Detroit, MI",
+    "overallRank": 125,
+    "positionRank": 13,
+    "strengths": [
+      "Explosive gap shooter; active hands",
+      "TFL specialist with good first step",
+      "High motor for IDP disruptions"
+    ],
+    "weaknesses": [
+      "Undersized; gets engulfed by OL",
+      "Limited ceiling at NFL level",
+      "Needs to add strength"
+    ],
+    "comp": "Shaka Toney × BJ Ojulari"
+  },
+  {
+    "name": "Tonka Hemingway",
+    "position": "DT",
+    "college": "South Carolina",
+    "team": "Seattle Seahawks",
+    "pick": "#95",
+    "height": "6'5\"",
+    "weight": "305 lbs",
+    "age": 21,
+    "hometown": "Columbia, SC",
+    "overallRank": 126,
+    "positionRank": 14,
+    "strengths": [
+      "High-effort interior; good motor for pressures",
+      "Versatile alignment; contributes in run defense",
+      "Potential rotational IDP value"
+    ],
+    "weaknesses": [
+      "Limited athleticism; average burst",
+      "Needs to develop counters",
+      "Inconsistent production"
+    ],
+    "comp": "Larry Ogunjobi × Justin Jones"
+  },
+  {
+    "name": "McKinnley Jackson",
+    "position": "DT",
+    "college": "Texas A&M",
+    "team": "Cincinnati Bengals",
+    "pick": "#97",
+    "height": "6'4\"",
+    "weight": "295 lbs",
+    "age": 21,
+    "hometown": "Houston, TX",
+    "overallRank": 127,
+    "positionRank": 15,
+    "strengths": [
+      "Strong bull-rusher; clogs lanes for stuffs",
+      "High motor; reliable vs double teams",
+      "IDP potential as nose tackle"
+    ],
+    "weaknesses": [
+      "Limited pass-rush variety",
+      "Conditioning concerns",
+      "Straight-line mover"
+    ],
+    "comp": "Grover Stewart × Davon Godchaux"
+  },
+  {
+    "name": "Rueben Bain Jr.",
+    "position": "DT",
+    "college": "Miami (FL)",
+    "team": "Arizona Cardinals",
+    "pick": "#45",
+    "height": "6'3\"",
+    "weight": "305 lbs",
+    "age": 21,
+    "hometown": "Miami, FL",
+    "overallRank": 128,
+    "positionRank": 16,
+    "strengths": [
+      "Twitchy 3-tech with quick swim moves",
+      "High win rate; disrupts for sacks/TFLs",
+      "Upside in IDP for rotational pressure"
+    ],
+    "weaknesses": [
+      "Lean build; struggles vs power",
+      "Raw technique needs development",
+      "Can be inconsistent"
+    ],
+    "comp": "Christian Wilkins × Ed Oliver"
+  },
+  {
+    "name": "Bear Alexander",
+    "position": "DT",
+    "college": "USC",
+    "team": "Washington Commanders",
+    "pick": "#100",
+    "height": "6'3\"",
+    "weight": "300 lbs",
+    "age": 22,
+    "hometown": "Los Angeles, CA",
+    "overallRank": 129,
+    "positionRank": 17,
+    "strengths": [
+      "Impressive traits; high upside as 3-tech",
+      "Quick burst; contributing rotational DT",
+      "Potential for IDP interior disruptions"
+    ],
+    "weaknesses": [
+      "Late bloomer; age concerns",
+      "Small-school adjustment",
+      "Needs to prove vs NFL competition"
+    ],
+    "comp": "Javon Kinlaw × Jalen Carter"
+  },
+  {
+    "name": "Hero Kanu",
+    "position": "DT",
+    "college": "Ohio State",
+    "team": "Los Angeles Chargers",
+    "pick": "#105",
+    "height": "6'4\"",
+    "weight": "295 lbs",
+    "age": 21,
+    "hometown": "Columbus, OH",
+    "overallRank": 130,
+    "positionRank": 18,
+    "strengths": [
+      "Athletic interior; good burst for TFLs",
+      "High effort; rotational potential",
+      "IDP value in gap-shooting"
+    ],
+    "weaknesses": [
+      "Undersized; engulfed by OL",
+      "Limited ceiling",
+      "Needs strength addition"
+    ],
+    "comp": "BJ Ojulari × Shaka Toney"
+  },
+  {
+    "name": "Mason Pline",
+    "position": "DT",
+    "college": "Ferris State",
+    "team": "Washington Commanders",
+    "pick": "#100",
+    "height": "6'3\"",
+    "weight": "308 lbs",
+    "age": 23,
+    "hometown": "Grand Rapids, MI",
+    "overallRank": 131,
+    "positionRank": 19,
+    "strengths": [
+      "Powerful bull-rusher; high effort",
+      "Small-school dominator with production",
+      "Good motor for IDP disruptions"
+    ],
+    "weaknesses": [
+      "Level of competition questions",
+      "Needs technique refinement",
+      "Limited athletic testing"
+    ],
+    "comp": "Grady Jarrett × Larry Ogunjobi"
+  },
+  {
+    "name": "Landon Jackson",
+    "position": "DT",
+    "college": "Arkansas",
+    "team": "Green Bay Packers",
+    "pick": "#88",
+    "height": "6'3\"",
+    "weight": "290 lbs",
+    "age": 22,
+    "hometown": "Little Rock, AR",
+    "overallRank": 132,
+    "positionRank": 20,
+    "strengths": [
+      "Tall/lengthy; bend around edge (though DT)",
+      "Upside in pass rush with length",
+      "Disruptive when healthy for IDP"
+    ],
+    "weaknesses": [
+      "Lean build; struggles vs power",
+      "Raw technique needs development",
+      "Injury concerns from college"
+    ],
+    "comp": "Gregory Rousseau × Kayvon Thibodeaux"
+  },
+  {
+    "name": "Kyree Drake",
+    "position": "DT",
+    "college": "South Carolina",
+    "team": "Buffalo Bills",
+    "pick": "#110",
+    "height": "6'4\"",
+    "weight": "300 lbs",
+    "age": 21,
+    "hometown": "Charleston, SC",
+    "overallRank": 133,
+    "positionRank": 21,
+    "strengths": [
+      "Quick gap shooter; active hands",
+      "TFL specialist with first step",
+      "High motor for IDP disruptions"
+    ],
+    "weaknesses": [
+      "Undersized; gets engulfed by OL",
+      "Limited ceiling",
+      "Needs to add strength"
+    ],
+    "comp": "Shaka Toney × BJ Ojulari"
   }
 ]
