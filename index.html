@@ -721,6 +721,137 @@
             color: var(--green);
             margin-bottom: 10px;
         }
+        
+        .round-strategy {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .round-card {
+            background: var(--surface);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        
+        .round-card:hover {
+            border-color: var(--highlight);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .round-card h4 {
+            color: var(--highlight);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .round-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .round-card li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .round-card li::before {
+            content: "•";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .strategy-tip {
+            font-style: italic;
+            color: #999;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .target-table {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .target-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .target-table th {
+            background: var(--highlight);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .target-table td {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .target-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .target-table tr:hover {
+            background: rgba(255, 215, 0, 0.05);
+        }
+        
+        .elite-tier {
+            background: rgba(255, 215, 0, 0.1);
+        }
+        
+        .high-tier {
+            background: rgba(52, 211, 153, 0.1);
+        }
+        
+        .mid-tier {
+            background: rgba(50, 130, 184, 0.1);
+        }
+        
+        .general-tips {
+            background: var(--surface);
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .general-tips h4 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+        
+        .general-tips ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .general-tips li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .general-tips li::before {
+            content: "→";
+            color: var(--highlight);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
 
         .modal {
             display: none;
@@ -1754,6 +1885,267 @@
             <div class="draft-tip">
                 <h4>💡 Draft Tip:</h4>
                 <p>Use your board for real-time ADP—grab these if they slip. Prioritize WR/TE early-mid, IDP late. If needed, trade bench vets (e.g., Mostert, Gallup) for picks to snag more sleepers.</p>
+            </div>
+            
+            <h2>📊 Updated Draft Strategy for Pick #6</h2>
+            
+            <p><em>Picking at #6 in every round (linear draft, not snake) in a 12-team league means you're in a mid-tier spot consistently. This is advantageous for value falls but risky if runs happen early (e.g., top RBs or WRs gone by 1.06). With your strong veteran core, prioritize BPA tilted toward WR youth (your primary need), then RB/TE/QB for depth, and IDP later.</em></p>
+            
+            <h3>🎯 Key Adjustments for Linear Draft</h3>
+            
+            <div class="round-strategy">
+                <div class="round-card">
+                    <h4>Round 1 (1.06)</h4>
+                    <p>Elites like <strong>Ashton Jeanty</strong> and <strong>Omarion Hampton</strong> are likely off the board (top-2 consensus). Aim for:</p>
+                    <ul>
+                        <li><strong>Tetairoa McMillan</strong> - Big WR1 potential</li>
+                        <li><strong>Travis Hunter</strong> - Two-way star with IDP bonus</li>
+                        <li><strong>Quinshon Judkins</strong> - Volume power back</li>
+                    </ul>
+                    <p class="strategy-tip">If a QB run starts (e.g., Ward top-5), pivot to WR/RB. Avoid reaching for IDP here.</p>
+                </div>
+                
+                <div class="round-card">
+                    <h4>Round 2 (2.06)</h4>
+                    <p>Mid-high talents often available:</p>
+                    <ul>
+                        <li><strong>Matthew Golden</strong> - Slot speedster for WR depth</li>
+                        <li><strong>Colston Loveland</strong> - Top TE prospect</li>
+                        <li><strong>Emeka Egbuka</strong> - Route technician</li>
+                    </ul>
+                    <p class="strategy-tip">If you went WR in Rd1, grab QB like <strong>Jaxson Dart</strong> or RB sleeper like <strong>TreVeyon Henderson</strong>.</p>
+                </div>
+                
+                <div class="round-card">
+                    <h4>Round 3 (3.06)</h4>
+                    <p>Shift to value QBs or IDP depth:</p>
+                    <ul>
+                        <li><strong>Jalen Milroe</strong> - Dual-threat QB</li>
+                        <li><strong>Jihaad Campbell</strong> - Tackle machine LB</li>
+                        <li><strong>Jalon Walker</strong> - Versatile pass rusher</li>
+                    </ul>
+                </div>
+                
+                <div class="round-card">
+                    <h4>Round 4+ (4.06+)</h4>
+                    <p>Sleepers and stashes:</p>
+                    <ul>
+                        <li><strong>Mason Graham</strong> - DT with sack potential</li>
+                        <li><strong>Jalen Royals</strong> - Chiefs WR sleeper</li>
+                        <li>Focus on IDP boom potential</li>
+                    </ul>
+                    <p class="strategy-tip">With ~4 open roster spots, draft 4-5 rounds max.</p>
+                </div>
+            </div>
+            
+            <h3>📋 Offensive Rookies Target Board</h3>
+            <p><em>Prioritized for your WR need, with QB flex appeal.</em></p>
+            
+            <div class="target-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Pos</th>
+                            <th>Team</th>
+                            <th>Why Target?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="elite-tier">
+                            <td>Elite</td>
+                            <td>1</td>
+                            <td><strong>Ashton Jeanty</strong></td>
+                            <td>RB</td>
+                            <td>LV</td>
+                            <td>Elite three-down PPR back; likely gone by 1.06</td>
+                        </tr>
+                        <tr class="elite-tier">
+                            <td>Elite</td>
+                            <td>2</td>
+                            <td><strong>Omarion Hampton</strong></td>
+                            <td>RB</td>
+                            <td>LAC</td>
+                            <td>Explosive with pass-game role; probably top-3 pick</td>
+                        </tr>
+                        <tr class="elite-tier">
+                            <td>Elite</td>
+                            <td>3</td>
+                            <td><strong>Tetairoa McMillan</strong></td>
+                            <td>WR</td>
+                            <td>CAR</td>
+                            <td>Big WR1 potential; great 1.06 target if falls</td>
+                        </tr>
+                        <tr class="elite-tier">
+                            <td>Elite</td>
+                            <td>4</td>
+                            <td><strong>Travis Hunter</strong></td>
+                            <td>WR/CB</td>
+                            <td>JAC</td>
+                            <td>Two-way star; WR fix + IDP bonus if dual-eligible</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>5</td>
+                            <td><strong>Quinshon Judkins</strong></td>
+                            <td>RB</td>
+                            <td>CLE</td>
+                            <td>Volume power back; solid 1.06 pivot</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>6</td>
+                            <td><strong>TreVeyon Henderson</strong></td>
+                            <td>RB</td>
+                            <td>NE</td>
+                            <td>Agile receiver; more PPR RB depth</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>7</td>
+                            <td><strong>Matthew Golden</strong></td>
+                            <td>WR</td>
+                            <td>GB</td>
+                            <td>Slot speedster; 2.06 value for WR duo</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>8</td>
+                            <td><strong>Colston Loveland</strong></td>
+                            <td>TE</td>
+                            <td>CHI</td>
+                            <td>Top TE prospect; long-term Engram successor</td>
+                        </tr>
+                        <tr class="mid-tier">
+                            <td>Mid</td>
+                            <td>9</td>
+                            <td><strong>Emeka Egbuka</strong></td>
+                            <td>WR</td>
+                            <td>TB</td>
+                            <td>Route technician; mid-round WR target</td>
+                        </tr>
+                        <tr class="mid-tier">
+                            <td>Mid</td>
+                            <td>10</td>
+                            <td><strong>Luther Burden III</strong></td>
+                            <td>WR</td>
+                            <td>CHI</td>
+                            <td>YAC specialist; perfect for PPR WR depth</td>
+                        </tr>
+                        <tr class="mid-tier">
+                            <td>Mid</td>
+                            <td>11</td>
+                            <td><strong>Cameron Ward</strong></td>
+                            <td>QB</td>
+                            <td>TEN</td>
+                            <td>Polished passer; QB3 stash for OP flex</td>
+                        </tr>
+                        <tr class="mid-tier">
+                            <td>Mid</td>
+                            <td>12</td>
+                            <td><strong>Jaxson Dart</strong></td>
+                            <td>QB</td>
+                            <td>NYG</td>
+                            <td>Mobile with arm; backup if Ward gone</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>🛡️ IDP Rookies Target Board</h3>
+            <p><em>Aim for these in Rd 3+ to boost pass-rush and tackles.</em></p>
+            
+            <div class="target-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Pos</th>
+                            <th>Team</th>
+                            <th>Why Target?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="elite-tier">
+                            <td>Elite</td>
+                            <td>1</td>
+                            <td><strong>Abdul Carter</strong></td>
+                            <td>DE</td>
+                            <td>NYG</td>
+                            <td>Premier edge; rarely falls past top-10 IDP</td>
+                        </tr>
+                        <tr class="elite-tier">
+                            <td>Elite</td>
+                            <td>2</td>
+                            <td><strong>Travis Hunter</strong></td>
+                            <td>CB</td>
+                            <td>JAC</td>
+                            <td>Elite DB if CB-eligible; dual WR value</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>3</td>
+                            <td><strong>Jihaad Campbell</strong></td>
+                            <td>LB</td>
+                            <td>PHI</td>
+                            <td>Tackle hound; 3.06 target for LB depth</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>4</td>
+                            <td><strong>Carson Schwesinger</strong></td>
+                            <td>LB</td>
+                            <td>CLE</td>
+                            <td>Volume LB; fits your LB strength</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>5</td>
+                            <td><strong>Jalon Walker</strong></td>
+                            <td>DE/LB</td>
+                            <td>ATL</td>
+                            <td>Versatile rusher; multi-pos flex</td>
+                        </tr>
+                        <tr class="high-tier">
+                            <td>High</td>
+                            <td>6</td>
+                            <td><strong>James Pearce Jr.</strong></td>
+                            <td>DE</td>
+                            <td>ATL</td>
+                            <td>Sack artist; DE bench boost</td>
+                        </tr>
+                        <tr class="mid-tier">
+                            <td>Mid</td>
+                            <td>7</td>
+                            <td><strong>Mike Green</strong></td>
+                            <td>DE</td>
+                            <td>BAL</td>
+                            <td>Edge value; mid-round pick</td>
+                        </tr>
+                        <tr class="mid-tier">
+                            <td>Mid</td>
+                            <td>8</td>
+                            <td><strong>Mason Graham</strong></td>
+                            <td>DT</td>
+                            <td>CLE</td>
+                            <td>Interior force; DT backup</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="general-tips">
+                <h4>🎲 General Tips:</h4>
+                <ul>
+                    <li>Monitor the board for league-specific tiers</li>
+                    <li>If top WRs dry up early, trade down from 1.06 for extra picks (no trade limit)</li>
+                    <li>PPR/IDP scoring favors versatile players (e.g., Hunter's potential dual eligibility)</li>
+                    <li>Focus on your board for any custom tweaks</li>
+                </ul>
             </div>
         </div>
     </div>
