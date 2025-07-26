@@ -1232,72 +1232,6 @@
     "comp": "Laviska Shenault × Chase Claypool"
   },
   {
-    "name": "Jalon Walker",
-    "position": "LB",
-    "college": "Georgia",
-    "team": "Atlanta Falcons",
-    "pick": "#15",
-    "height": "6'2\"",
-    "weight": "245 lbs",
-    "overallRank": 88,
-    "positionRank": 1,
-    "strengths": [
-      "Athletic and versatile hybrid defender; excels as edge rusher or spy",
-      "High draft capital suggests extended opportunities in IDP",
-      "Potential to rush the passer and make plays in space"
-    ],
-    "weaknesses": [
-      "Needs development at off-ball linebacker position",
-      "Raw in coverage; may struggle initially in pass defense",
-      "Versatility could limit snaps if not focused on one role"
-    ],
-    "comp": "Kaden Elliss × Haason Reddick"
-  },
-  {
-    "name": "Jihaad Campbell",
-    "position": "LB",
-    "college": "Alabama",
-    "team": "Philadelphia Eagles",
-    "pick": "#45",
-    "height": "6'3\"",
-    "weight": "240 lbs",
-    "overallRank": 89,
-    "positionRank": 2,
-    "strengths": [
-      "Big, long, fast with burst; physical and rangy in coverage",
-      "Pass rush ability; can blitz and play edge in packages",
-      "Productive off-ball LB in college; adapts well to Vic Fangio's scheme"
-    ],
-    "weaknesses": [
-      "May be pigeonholed; needs to define primary role",
-      "Injury timeline for teammates could affect snaps",
-      "Raw technique in some areas"
-    ],
-    "comp": "Zack Baun × Devin White"
-  },
-  {
-    "name": "Carson Schwesinger",
-    "position": "LB",
-    "college": "UCLA",
-    "team": "Cleveland Browns",
-    "pick": "#33",
-    "height": "6'2\"",
-    "weight": "230 lbs",
-    "overallRank": 90,
-    "positionRank": 3,
-    "strengths": [
-      "Three-down skill set; can hold down the middle of the defense",
-      "Tackle monster with high draft capital; bright dynasty outlook",
-      "Opportunity due to veteran uncertainties and health issues"
-    ],
-    "weaknesses": [
-      "Limited athletic upside compared to peers",
-      "Needs to prove consistency at NFL level",
-      "Run defense focus may limit pass-rush stats"
-    ],
-    "comp": "Jordan Hicks × Fred Warner"
-  },
-  {
     "name": "Demetrius Knight Jr.",
     "position": "LB",
     "college": "IMG Academy",
@@ -2110,5 +2044,423 @@
       "Needs to develop pass-rush moves"
     ],
     "comp": "DeForest Buckner × Cameron Jordan"
+  },
+  {
+    "name": "Malaki Starks",
+    "position": "S",
+    "college": "Georgia",
+    "team": "Baltimore Ravens",
+    "pick": "#27",
+    "height": "6'1\"",
+    "weight": "205 lbs",
+    "overallRank": 72,
+    "positionRank": 1,
+    "strengths": [
+      "Rangy FS with ball skills (7 INTs); high PDs for IDP points",
+      "Strong tackle volume potential as safety",
+      "Versatile deep/box alignment for fantasy value"
+    ],
+    "weaknesses": [
+      "Lean frame; tackling inconsistencies in run support",
+      "Run support average; better in coverage",
+      "Needs to add strength for NFL contact"
+    ],
+    "comp": "Kyle Hamilton × Jessie Bates"
+  },
+  {
+    "name": "Nick Emmanwori",
+    "position": "S",
+    "college": "South Carolina",
+    "team": "Seattle Seahawks",
+    "pick": "#49",
+    "height": "6'3\"",
+    "weight": "227 lbs",
+    "overallRank": 73,
+    "positionRank": 2,
+    "strengths": [
+      "Physical SS; strong tackler with low miss rate",
+      "Blitz upside for sacks; versatile box defender",
+      "Size and physicality for run support"
+    ],
+    "weaknesses": [
+      "Limited coverage speed vs. receivers",
+      "Bites on play-action; developmental in coverage",
+      "Raw technique needs refinement"
+    ],
+    "comp": "Kam Chancellor × Derwin James"
+  },
+  {
+    "name": "Lathan Ransom",
+    "position": "S",
+    "college": "Ohio State",
+    "team": "Philadelphia Eagles",
+    "pick": "#94",
+    "height": "6'1\"",
+    "weight": "205 lbs",
+    "overallRank": 74,
+    "positionRank": 3,
+    "strengths": [
+      "Instinctive playmaker; high INT potential",
+      "Versatile box/deep safety for IDP value",
+      "Strong football IQ and positioning"
+    ],
+    "weaknesses": [
+      "Average size/speed; not elite athletically",
+      "Injury history raises durability concerns",
+      "Needs polish in man coverage"
+    ],
+    "comp": "Xavier McKinney × Antoine Winfield Jr."
+  },
+  {
+    "name": "Sonny Styles",
+    "position": "S",
+    "college": "Ohio State",
+    "team": "Green Bay Packers",
+    "pick": "#88",
+    "height": "6'4\"",
+    "weight": "215 lbs",
+    "overallRank": 75,
+    "positionRank": 4,
+    "strengths": [
+      "Hybrid S/LB; sideline speed for pursuit",
+      "Tackles for loss potential (3.5 pts) from safety",
+      "Size and athleticism for multiple alignments"
+    ],
+    "weaknesses": [
+      "Raw in coverage; position fit questions",
+      "Limited tape; developmental prospect",
+      "Needs to refine technique at safety"
+    ],
+    "comp": "Isaiah Simmons × Budda Baker"
+  },
+  {
+    "name": "Jaden Hicks",
+    "position": "S",
+    "college": "Washington State",
+    "team": "Kansas City Chiefs",
+    "pick": "#133",
+    "height": "6'1\"",
+    "weight": "207 lbs",
+    "overallRank": 76,
+    "positionRank": 5,
+    "strengths": [
+      "Physical hitter; strong in run support",
+      "PD specialist with aggressive style",
+      "High tackle volume potential near LOS"
+    ],
+    "weaknesses": [
+      "Stiff hips; struggles in deep coverage",
+      "Penalty-prone; plays too aggressive",
+      "Limited range as deep safety"
+    ],
+    "comp": "Jamal Adams × Tyrann Mathieu"
+  },
+  {
+    "name": "Malachi Moore",
+    "position": "S",
+    "college": "Alabama",
+    "team": "New York Giants",
+    "pick": "#107",
+    "height": "5'11\"",
+    "weight": "190 lbs",
+    "overallRank": 77,
+    "positionRank": 6,
+    "strengths": [
+      "Slot nickel S; quick feet in coverage",
+      "High tackles/PDs in coverage role",
+      "Versatile nickel/safety usage"
+    ],
+    "weaknesses": [
+      "Undersized; limited deep range",
+      "Injury concerns from college",
+      "May struggle vs. bigger targets"
+    ],
+    "comp": "Mike Hilton × Jalen Pitre"
+  },
+  {
+    "name": "Kevin Winston Jr.",
+    "position": "S",
+    "college": "Penn State",
+    "team": "Detroit Lions",
+    "pick": "#126",
+    "height": "6'2\"",
+    "weight": "200 lbs",
+    "overallRank": 78,
+    "positionRank": 7,
+    "strengths": [
+      "Rangy athlete; ballhawk with 5 INTs",
+      "Versatile alignments for IDP value",
+      "High upside with ball skills"
+    ],
+    "weaknesses": [
+      "Tackling issues; missed tackles concern",
+      "Plays too aggressive; needs discipline",
+      "Inconsistent run support"
+    ],
+    "comp": "Minkah Fitzpatrick × Marcus Williams"
+  },
+  {
+    "name": "Billy Bowman Jr.",
+    "position": "S",
+    "college": "Oklahoma",
+    "team": "Minnesota Vikings",
+    "pick": "#177",
+    "height": "5'11\"",
+    "weight": "195 lbs",
+    "overallRank": 79,
+    "positionRank": 8,
+    "strengths": [
+      "Instinctive FS; playmaker with returns",
+      "IDP turnover upside with ball skills",
+      "Special teams value as returner"
+    ],
+    "weaknesses": [
+      "Average size/speed; limited athleticism",
+      "Run defense weak; coverage specialist",
+      "Developmental prospect needs time"
+    ],
+    "comp": "Eddie Jackson × Kevin Byard"
+  },
+  {
+    "name": "Jonas Sanker",
+    "position": "S",
+    "college": "Virginia",
+    "team": "Chicago Bears",
+    "pick": "#144",
+    "height": "6'0\"",
+    "weight": "210 lbs",
+    "overallRank": 80,
+    "positionRank": 9,
+    "strengths": [
+      "Physical box S; strong tackler near LOS",
+      "Blitz potential for FF and sacks",
+      "Run support specialist with size"
+    ],
+    "weaknesses": [
+      "Limited coverage skills vs. receivers",
+      "Speed concerns vs. faster WRs",
+      "One-dimensional as box safety"
+    ],
+    "comp": "Donovan Wilson × Jaquan Brisker"
+  },
+  {
+    "name": "Dillon Thieneman",
+    "position": "S",
+    "college": "Purdue",
+    "team": "San Francisco 49ers",
+    "pick": "#176",
+    "height": "6'0\"",
+    "weight": "195 lbs",
+    "overallRank": 81,
+    "positionRank": 10,
+    "strengths": [
+      "High-IQ deep S; ball skills with 6 INTs",
+      "Reliable tackler with good instincts",
+      "Cerebral player with positioning"
+    ],
+    "weaknesses": [
+      "Average athleticism; not elite speed",
+      "Struggles in man coverage vs. speed",
+      "Small-school feel; needs adjustment"
+    ],
+    "comp": "Harrison Smith × Justin Simmons"
+  },
+  {
+    "name": "Jahdae Barron",
+    "position": "CB",
+    "college": "Texas",
+    "team": "Denver Broncos",
+    "pick": "#20",
+    "height": "5'10\"",
+    "weight": "185 lbs",
+    "overallRank": 82,
+    "positionRank": 1,
+    "strengths": [
+      "Sticky man coverage; high PDs/INTs for IDP",
+      "Slot versatility; covers multiple receiver types",
+      "Strong ball skills with turnover upside"
+    ],
+    "weaknesses": [
+      "Average size/speed; run support weak",
+      "Penalty risks with grabby hands",
+      "May struggle vs. bigger receivers"
+    ],
+    "comp": "Trent McDuffie × L'Jarius Sneed"
+  },
+  {
+    "name": "Maxwell Hairston",
+    "position": "CB",
+    "college": "Kentucky",
+    "team": "Buffalo Bills",
+    "pick": "#30",
+    "height": "6'0\"",
+    "weight": "190 lbs",
+    "overallRank": 83,
+    "positionRank": 2,
+    "strengths": [
+      "Playmaker with 5 INTs in 2024; strong ball skills",
+      "Return value for additional fantasy points",
+      "Good instincts and coverage awareness"
+    ],
+    "weaknesses": [
+      "Stiff hips; struggles vs. speed WRs",
+      "Tackling average; missed tackle concerns",
+      "Recovery speed limitations"
+    ],
+    "comp": "Asante Samuel Jr. × Marcus Peters"
+  },
+  {
+    "name": "Tacario Davis",
+    "position": "CB",
+    "college": "Arizona",
+    "team": "Philadelphia Eagles",
+    "pick": "#53",
+    "height": "6'2\"",
+    "weight": "190 lbs",
+    "overallRank": 84,
+    "positionRank": 3,
+    "strengths": [
+      "Long press-man CB; high PDs at line",
+      "Physical at catch point; disrupts timing",
+      "Size advantage vs. most receivers"
+    ],
+    "weaknesses": [
+      "Limited speed recovery; gets beat deep",
+      "Grabby in coverage; penalty-prone",
+      "Inconsistent technique in zone"
+    ],
+    "comp": "Xavien Howard × Tariq Woolen"
+  },
+  {
+    "name": "Benjamin Morrison",
+    "position": "CB",
+    "college": "Notre Dame",
+    "team": "Los Angeles Rams",
+    "pick": "#52",
+    "height": "6'0\"",
+    "weight": "190 lbs",
+    "overallRank": 85,
+    "positionRank": 4,
+    "strengths": [
+      "Instinctive zone CB; ballhawk with 9 career INTs",
+      "High IQ; excellent positioning and anticipation",
+      "Proven ball production for IDP leagues"
+    ],
+    "weaknesses": [
+      "Injury history (2024 shoulder); durability concerns",
+      "Average athleticism; not elite speed",
+      "May struggle in pure man coverage"
+    ],
+    "comp": "Darius Slay × Jaylon Johnson"
+  },
+  {
+    "name": "Denzel Burke",
+    "position": "CB",
+    "college": "Ohio State",
+    "team": "New York Jets",
+    "pick": "#65",
+    "height": "6'0\"",
+    "weight": "193 lbs",
+    "overallRank": 86,
+    "positionRank": 5,
+    "strengths": [
+      "Smooth man-cover; quick feet in coverage",
+      "PD specialist with good ball skills",
+      "Fluid movement and change of direction"
+    ],
+    "weaknesses": [
+      "Lean build; tackling reluctant",
+      "Deep speed average; recovery issues",
+      "Needs to add physicality"
+    ],
+    "comp": "Stephon Gilmore × Sauce Gardner"
+  },
+  {
+    "name": "Shavon Revel",
+    "position": "CB",
+    "college": "East Carolina",
+    "team": "Green Bay Packers",
+    "pick": "#88",
+    "height": "6'3\"",
+    "weight": "207 lbs",
+    "overallRank": 87,
+    "positionRank": 6,
+    "strengths": [
+      "Physical boundary CB; strong jam at line",
+      "Run support tackler; adds IDP value",
+      "Size to match up with bigger receivers"
+    ],
+    "weaknesses": [
+      "Speed concerns (4.5 40); recovery burst limited",
+      "Gets beat by quicker receivers",
+      "Raw technique needs development"
+    ],
+    "comp": "Joey Porter Jr. × Carlton Davis"
+  },
+  {
+    "name": "Daylen Everette",
+    "position": "CB",
+    "college": "Georgia",
+    "team": "Chicago Bears",
+    "pick": "#122",
+    "height": "5'9\"",
+    "weight": "175 lbs",
+    "overallRank": 88,
+    "positionRank": 7,
+    "strengths": [
+      "Versatile slot/outside; high PDs production",
+      "Instinctive with good ball skills",
+      "Quick feet for underneath coverage"
+    ],
+    "weaknesses": [
+      "Undersized; struggles vs. big WRs",
+      "Injury-prone; durability questions",
+      "Limited to slot/nickel role"
+    ],
+    "comp": "Kenny Moore × Mike Hilton"
+  },
+  {
+    "name": "Cobie Durant",
+    "position": "CB",
+    "college": "Northwestern State",
+    "team": "Seattle Seahawks",
+    "pick": "#117",
+    "height": "5'11\"",
+    "weight": "180 lbs",
+    "overallRank": 89,
+    "positionRank": 8,
+    "strengths": [
+      "Quick-twitch athlete; ball skills",
+      "Return upside for additional fantasy points",
+      "Good speed and acceleration"
+    ],
+    "weaknesses": [
+      "Small-school transition; raw technique",
+      "Tackling weak; avoids contact",
+      "Needs time to develop consistency"
+    ],
+    "comp": "Avonte Maddox × Darious Williams"
+  },
+  {
+    "name": "Jabbar Muhammad",
+    "position": "CB",
+    "college": "Oregon",
+    "team": "Minnesota Vikings",
+    "pick": "#157",
+    "height": "5'10\"",
+    "weight": "185 lbs",
+    "overallRank": 90,
+    "positionRank": 9,
+    "strengths": [
+      "Feisty press-man; high energy player",
+      "PD producer with competitive nature",
+      "Good instincts and coverage awareness"
+    ],
+    "weaknesses": [
+      "Size limitations vs. bigger receivers",
+      "Grabby hands; penalties common",
+      "Inconsistent tackling technique"
+    ],
+    "comp": "Rasul Douglas × Charvarius Ward"
   }
 ]
