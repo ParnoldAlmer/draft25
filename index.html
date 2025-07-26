@@ -1151,6 +1151,7 @@
                 console.warn('Could not load JSON file, using fallback data:', error.message);
                 // Fallback to inline data for direct file access
                 await loadFallbackData();
+                return; // Exit early if fallback is used
             }
             
             // Sort players by overall rank (null values go to end)
@@ -1162,7 +1163,9 @@
             });
             
             // Initialize the page after data is loaded
+            console.log('About to render', players.length, 'players');
             renderPlayers(players);
+            console.log('Finished rendering players');
         }
 
         // Fallback function that loads from players.json using dynamic import when possible
@@ -1207,7 +1210,7 @@
                     card.className = player.college === 'USC' ? 'player-card usc-card' : 'player-card';
                     
                     const combineSection = player.combine ? `
-                        <div class="combine-metrics" data-player-name="${player.name}" onclick="showCombineModal(this.dataset.playerName)">
+                        <div class="combine-metrics" data-player-name="${player.name}">
                             <h5>🏃‍♂️ Athletic Testing (Click for Details)</h5>
                             <div class="metrics-grid">
                                 ${player.combine.40yard ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine.40yard}s</span></div>` : ''}
@@ -1236,7 +1239,7 @@
                         <div class="player-measurements">
                             <span>${player.height}</span>
                             <span>${player.weight}</span>
-                            ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" data-player-name="${player.name}" onclick="showCombineModal(this.dataset.playerName)">📊 ${player.combine.source}</span>` : ''}
+                            ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" data-player-name="${player.name}">📊 ${player.combine.source}</span>` : ''}
                         </div>
                         ${combineSection}
                         <div class="strengths-weaknesses">
@@ -1343,6 +1346,17 @@
         
         // Load player data and initialize the page
         loadPlayerData();
+        
+        // Add event delegation for combine modal clicks
+        document.addEventListener('click', function(event) {
+            if (event.target.closest('.combine-metrics') || event.target.closest('.combine-data')) {
+                const element = event.target.closest('.combine-metrics') || event.target.closest('.combine-data');
+                const playerName = element.dataset.playerName;
+                if (playerName) {
+                    showCombineModal(playerName);
+                }
+            }
+        });
         
         // Changelog data
         const changelogData = [
