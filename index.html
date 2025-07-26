@@ -341,6 +341,13 @@
             opacity: 0.8;
             font-size: 0.85em;
         }
+        .player-details .age-info {
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 0.8em;
+            display: block;
+            margin-top: 2px;
+        }
 
         .rank-tags {
             display: flex;
@@ -778,6 +785,53 @@
             position: absolute;
             left: 0;
         }
+        
+        /* Combine Modal Styles */
+        .combine-modal-content {
+            max-width: 800px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .combine-data {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .combine-data:hover {
+            background: var(--highlight);
+            transform: scale(1.05);
+        }
+        .combine-metrics {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .combine-metrics:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-1px);
+        }
+        .detailed-combine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .detailed-metric {
+            background: rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .detailed-metric-label {
+            font-size: 0.8em;
+            opacity: 0.8;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .detailed-metric-value {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--highlight);
+        }
 
         /* Mobile optimizations */
         @media (max-width: 768px) {
@@ -1070,6 +1124,15 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="combineModal">
+        <div class="modal-content combine-modal-content">
+            <span class="close-modal" onclick="closeCombineModal()">&times;</span>
+            <h2 id="combineModalTitle">🏃‍♂️ NFL Combine Results</h2>
+            <div id="combineModalContent">
+                <!-- Combine data will be inserted here -->
+            </div>
+        </div>
+    </div>
 
     <script>
         let players = [];
@@ -1150,6 +1213,7 @@
                             <div class="player-details">
                                 <span class="college">${player.college}</span>
                                 <span class="draft-info">${player.pick} • ${player.team}</span>
+                                ${player.age ? `<span class="age-info">Age: ${player.age}</span>` : ''}
                             </div>
                             ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 8px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 8px;">${player.position}</div>`}
                         </div>
@@ -1161,20 +1225,15 @@
                     <div class="player-measurements">
                         <span>${player.height}</span>
                         <span>${player.weight}</span>
-                        ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data">📊 ${player.combine.source}</span>` : ''}
+                        ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" onclick="showCombineModal('${player.name}')">📊 ${player.combine.source}</span>` : ''}
                     </div>
                     ${player.combine ? `
-                    <div class="combine-metrics">
-                        <h5>🏃‍♂️ Athletic Testing</h5>
+                    <div class="combine-metrics" onclick="showCombineModal('${player.name}')">
+                        <h5>🏃‍♂️ Athletic Testing (Click for Details)</h5>
                         <div class="metrics-grid">
                             ${player.combine.40yard ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine.40yard}s</span></div>` : ''}
                             ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
                             ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
-                            ${player.combine.threeCone ? `<div class="metric"><span class="metric-label">3-Cone</span><span class="metric-value">${player.combine.threeCone}s</span></div>` : ''}
-                            ${player.combine.bench ? `<div class="metric"><span class="metric-label">Bench</span><span class="metric-value">${player.combine.bench}</span></div>` : ''}
-                            ${player.combine.shuttle ? `<div class="metric"><span class="metric-label">20-Yard</span><span class="metric-value">${player.combine.shuttle}s</span></div>` : ''}
-                            ${player.combine.armLength ? `<div class="metric"><span class="metric-label">Arms</span><span class="metric-value">${player.combine.armLength}</span></div>` : ''}
-                            ${player.combine.handSize ? `<div class="metric"><span class="metric-label">Hands</span><span class="metric-value">${player.combine.handSize}</span></div>` : ''}
                         </div>
                     </div>
                     ` : ''}
@@ -1552,6 +1611,84 @@
             document.getElementById('changelogModal').style.display = 'none';
         }
 
+        // Combine Modal functions
+        function showCombineModal(playerName) {
+            const player = players.find(p => p.name === playerName);
+            if (!player || !player.combine) return;
+            
+            const modal = document.getElementById('combineModal');
+            const title = document.getElementById('combineModalTitle');
+            const content = document.getElementById('combineModalContent');
+            
+            title.textContent = `🏃‍♂️ ${playerName} - NFL Combine Results`;
+            
+            content.innerHTML = `
+                <div class="player-info">
+                    <h3>${player.name}</h3>
+                    <p><strong>School:</strong> ${player.college} | <strong>Position:</strong> ${player.position}</p>
+                    <p><strong>Height:</strong> ${player.height} | <strong>Weight:</strong> ${player.weight} | <strong>Age:</strong> ${player.age || 'N/A'}</p>
+                    <p><strong>Source:</strong> ${player.combine.source}</p>
+                </div>
+                
+                <div class="detailed-combine-grid">
+                    ${player.combine.40yard ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">40-Yard Dash</span>
+                            <span class="detailed-metric-value">${player.combine.40yard}s</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.vertical ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">Vertical Jump</span>
+                            <span class="detailed-metric-value">${player.combine.vertical}</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.broad ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">Broad Jump</span>
+                            <span class="detailed-metric-value">${player.combine.broad}</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.threeCone ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">3-Cone Drill</span>
+                            <span class="detailed-metric-value">${player.combine.threeCone}s</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.shuttle ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">20-Yard Shuttle</span>
+                            <span class="detailed-metric-value">${player.combine.shuttle}s</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.bench ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">Bench Press</span>
+                            <span class="detailed-metric-value">${player.combine.bench}</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.armLength ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">Arm Length</span>
+                            <span class="detailed-metric-value">${player.combine.armLength}</span>
+                        </div>
+                    ` : ''}
+                    ${player.combine.handSize ? `
+                        <div class="detailed-metric">
+                            <span class="detailed-metric-label">Hand Size</span>
+                            <span class="detailed-metric-value">${player.combine.handSize}</span>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+        }
+
+        function closeCombineModal() {
+            document.getElementById('combineModal').style.display = 'none';
+        }
+
         function populateChangelog() {
             const container = document.getElementById('changelogItems');
             container.innerHTML = '';
@@ -1576,12 +1713,17 @@
             });
         }
 
-        // Update modal click handler to include changelog modal
+        // Update modal click handler to include both modals
         window.onclick = function(event) {
             const changelogModal = document.getElementById('changelogModal');
+            const combineModal = document.getElementById('combineModal');
             
             if (event.target === changelogModal) {
                 changelogModal.style.display = 'none';
+            }
+            
+            if (event.target === combineModal) {
+                combineModal.style.display = 'none';
             }
         }
 

@@ -7,6 +7,7 @@
     "pick": "#6",
     "height": "5'9\"",
     "weight": "215 lbs",
+    "age": 21.8,
     "overallRank": 1,
     "positionRank": 1,
     "combine": {
@@ -40,6 +41,7 @@
     "pick": "#1",
     "height": "6'2\"",
     "weight": "223 lbs",
+    "age": 22.9,
     "overallRank": 2,
     "positionRank": 2,
     "combine": {
@@ -73,6 +75,7 @@
     "pick": "#2",
     "height": "6'1\"",
     "weight": "185 lbs",
+    "age": 21.9,
     "overallRank": 3,
     "positionRank": 2,
     "combine": {
@@ -106,6 +109,7 @@
     "pick": "#8",
     "height": "6'5\"",
     "weight": "210 lbs",
+    "age": 21.2,
     "overallRank": 4,
     "positionRank": 1,
     "strengths": [
@@ -1646,6 +1650,7 @@
     "pick": "#3",
     "height": "6'3\"",
     "weight": "252 lbs",
+    "age": 21.3,
     "overallRank": 52,
     "positionRank": 1,
     "strengths": [
