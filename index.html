@@ -996,13 +996,10 @@
                     <div class="player-header">
                         <div>
                             <div class="player-name">${player.name}</div>
-                            <div class="ranking-container">
-                                <span class="ranking-badge overall">#${player.overallRank} Overall</span>
-                                <span class="ranking-badge position">#${player.positionRank} ${player.position}</span>
-                            </div>
+                            <div class="ranking-badge position" style="margin-top: 5px;">#${player.positionRank} ${player.position}</div>
                             <span class="position-badge ${getPositionClass(player.position)}">${player.position}</span>
                         </div>
-                        <div class="draft-pick">${player.pick}</div>
+                        <div class="draft-pick">#${player.overallRank}</div>
                     </div>
                     <div class="player-info">
                         <div>${player.college}</div>
