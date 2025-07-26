@@ -31,7 +31,7 @@
       "Limited route running polish",
       "Smaller frame could wear down"
     ],
-    "comp": "Alvin Kamara × Dalvin Cook"
+    "comp": "Alvin Kamara \u00d7 Dalvin Cook"
   },
   {
     "name": "Cam Ward",
@@ -65,7 +65,7 @@
       "History of turnovers (improved in 2024)",
       "Not a dual-threat, limiting rushing points"
     ],
-    "comp": "Russell Wilson × Patrick Mahomes"
+    "comp": "Russell Wilson \u00d7 Patrick Mahomes"
   },
   {
     "name": "Travis Hunter",
@@ -99,7 +99,7 @@
       "Inconsistent tackling in run support",
       "Raw technique, relies on athleticism"
     ],
-    "comp": "Charles Woodson × Champ Bailey"
+    "comp": "Charles Woodson \u00d7 Champ Bailey"
   },
   {
     "name": "Tetairoa McMillan",
@@ -122,7 +122,7 @@
       "Limited after-catch burst",
       "Injury history concerns"
     ],
-    "comp": "Mike Evans × Drake London"
+    "comp": "Mike Evans \u00d7 Drake London"
   },
   {
     "name": "Omarion Hampton",
@@ -144,7 +144,8 @@
       "Upright running style vulnerable to tackles",
       "Limited route diversity"
     ],
-    "comp": "Nick Chubb × Najee Harris"
+    "comp": "Nick Chubb \u00d7 Najee Harris",
+    "age": 22
   },
   {
     "name": "Luther Burden III",
@@ -166,7 +167,8 @@
       "Inconsistent hands and focus lapses",
       "Limited vertical speed"
     ],
-    "comp": "Deebo Samuel × Jaylen Waddle"
+    "comp": "Deebo Samuel \u00d7 Jaylen Waddle",
+    "age": 21
   },
   {
     "name": "Jaxson Dart",
@@ -188,7 +190,8 @@
       "Turnover-prone under pressure",
       "More game manager than star creator"
     ],
-    "comp": "Baker Mayfield × Matthew Stafford"
+    "comp": "Baker Mayfield \u00d7 Matthew Stafford",
+    "age": 22
   },
   {
     "name": "TreVeyon Henderson",
@@ -210,7 +213,8 @@
       "Lighter frame absorbs contact poorly",
       "Inconsistent vision, dances too much"
     ],
-    "comp": "Jahmyr Gibbs × Aaron Jones"
+    "comp": "Jahmyr Gibbs \u00d7 Aaron Jones",
+    "age": 22
   },
   {
     "name": "Quinshon Judkins",
@@ -232,7 +236,8 @@
       "Receiving polish needs development",
       "May lack home-run hitting ability"
     ],
-    "comp": "Josh Jacobs × Derrick Henry"
+    "comp": "Josh Jacobs \u00d7 Derrick Henry",
+    "age": 21
   },
   {
     "name": "Cam Skattebo",
@@ -254,7 +259,8 @@
       "Ball security concerns with fumbling",
       "May struggle vs faster NFL defenses"
     ],
-    "comp": "Christian McCaffrey × Austin Ekeler"
+    "comp": "Christian McCaffrey \u00d7 Austin Ekeler",
+    "age": 23
   },
   {
     "name": "Kaleb Johnson",
@@ -276,7 +282,8 @@
       "Pass protection needs work",
       "Limited receiving route diversity"
     ],
-    "comp": "Jonathan Taylor × Saquon Barkley"
+    "comp": "Jonathan Taylor \u00d7 Saquon Barkley",
+    "age": 21
   },
   {
     "name": "Dylan Sampson",
@@ -298,7 +305,8 @@
       "May struggle with heavy workloads",
       "Limited power between the tackles"
     ],
-    "comp": "De'Von Achane × Kenneth Walker"
+    "comp": "De'Von Achane \u00d7 Kenneth Walker",
+    "age": 20
   },
   {
     "name": "Jihaad Campbell",
@@ -320,7 +328,8 @@
       "Can be overpursued on misdirection",
       "Pass rush moves need development"
     ],
-    "comp": "Roquan Smith × Darius Leonard"
+    "comp": "Roquan Smith \u00d7 Darius Leonard",
+    "age": 21
   },
   {
     "name": "Jalon Walker",
@@ -342,7 +351,8 @@
       "Can bite on play-action",
       "Limited pass rush moves"
     ],
-    "comp": "Micah Parsons × Deion Jones"
+    "comp": "Micah Parsons \u00d7 Deion Jones",
+    "age": 21
   },
   {
     "name": "Carson Schwesinger",
@@ -364,7 +374,8 @@
       "Size concerns vs NFL TEs",
       "Pass rush upside is limited"
     ],
-    "comp": "Luke Kuechly × Brian Urlacher"
+    "comp": "Luke Kuechly \u00d7 Brian Urlacher",
+    "age": 22
   },
   {
     "name": "Tyler Shough",
@@ -386,7 +397,8 @@
       "Inconsistent accuracy on the move",
       "Limited starting experience due to transfers"
     ],
-    "comp": "Josh Allen × Carson Wentz"
+    "comp": "Josh Allen \u00d7 Carson Wentz",
+    "age": 25
   },
   {
     "name": "Dillon Gabriel",
@@ -408,7 +420,8 @@
       "Relies on timing over velocity",
       "Older prospect with heavy college mileage"
     ],
-    "comp": "Russell Wilson × Drew Brees"
+    "comp": "Russell Wilson \u00d7 Drew Brees",
+    "age": 24
   },
   {
     "name": "Jalen Milroe",
@@ -430,7 +443,8 @@
       "Raw mechanics need refinement",
       "Relies too much on athleticism over reads"
     ],
-    "comp": "Lamar Jackson × Jalen Hurts"
+    "comp": "Lamar Jackson \u00d7 Jalen Hurts",
+    "age": 22
   },
   {
     "name": "Shedeur Sanders",
@@ -452,7 +466,8 @@
       "Arm strength not elite on outside throws",
       "Durability concerns from college hits"
     ],
-    "comp": "Joe Burrow × Drew Brees"
+    "comp": "Joe Burrow \u00d7 Drew Brees",
+    "age": 23
   },
   {
     "name": "Kyle McCord",
@@ -474,7 +489,8 @@
       "Not athletic, pocket-bound",
       "Struggled with pressure in college"
     ],
-    "comp": "Kirk Cousins × Mac Jones"
+    "comp": "Kirk Cousins \u00d7 Mac Jones",
+    "age": 22
   },
   {
     "name": "Riley Leonard",
@@ -496,7 +512,8 @@
       "Inconsistent accuracy, mechanics need work",
       "Limited elite production due to injuries"
     ],
-    "comp": "Andrew Luck × Jordan Love"
+    "comp": "Andrew Luck \u00d7 Jordan Love",
+    "age": 22
   },
   {
     "name": "Will Howard",
@@ -518,7 +535,8 @@
       "Limited mobility, statue in pocket",
       "Turnover problems in key moments"
     ],
-    "comp": "Ben Roethlisberger × Josh Allen"
+    "comp": "Ben Roethlisberger \u00d7 Josh Allen",
+    "age": 23
   },
   {
     "name": "Quinn Ewers",
@@ -540,7 +558,8 @@
       "Arm strength good but not elite",
       "Limited mobility, pocket passer only"
     ],
-    "comp": "Jared Goff × Tua Tagovailoa"
+    "comp": "Jared Goff \u00d7 Tua Tagovailoa",
+    "age": 22
   },
   {
     "name": "Jaylin Smith",
@@ -562,7 +581,8 @@
       "Versatility may hinder specialization",
       "Lacks elite size for physical matchups"
     ],
-    "comp": "Jaire Alexander × Stephon Gilmore"
+    "comp": "Jaire Alexander \u00d7 Stephon Gilmore",
+    "age": 21
   },
   {
     "name": "Woody Marks",
@@ -584,7 +604,8 @@
       "Limited between-tackles vision",
       "Durability concerns with college workload"
     ],
-    "comp": "Austin Ekeler × James White"
+    "comp": "Austin Ekeler \u00d7 James White",
+    "age": 24
   },
   {
     "name": "Jonah Monheim",
@@ -606,7 +627,8 @@
       "Physical limitations vs elite EDGE",
       "Needs to add strength for NFL interior"
     ],
-    "comp": "Ali Marpet × Ben Powers"
+    "comp": "Ali Marpet \u00d7 Ben Powers",
+    "age": 23
   },
   {
     "name": "Easton Mascarenas-Arnold",
@@ -628,7 +650,8 @@
       "Needs to improve block shedding",
       "Limited pass-rush impact"
     ],
-    "comp": "Lavonte David × Devin White"
+    "comp": "Lavonte David \u00d7 Devin White",
+    "age": 21
   },
   {
     "name": "Jacobe Covington",
@@ -650,7 +673,7 @@
       "Inconsistent technique in off-coverage",
       "Speed concerns vs elite WRs"
     ],
-    "comp": "Byron Jones × Sean Murphy-Bunting"
+    "comp": "Byron Jones \u00d7 Sean Murphy-Bunting"
   },
   {
     "name": "Greedy Vance Jr.",
@@ -672,7 +695,8 @@
       "Limited starting experience at USC",
       "Needs to improve deep speed"
     ],
-    "comp": "Kenny Moore × Mike Hilton"
+    "comp": "Kenny Moore \u00d7 Mike Hilton",
+    "age": 23
   },
   {
     "name": "John Humphrey",
@@ -694,7 +718,7 @@
       "Needs to add strength for press",
       "Injury history in college"
     ],
-    "comp": "Avonte Maddox × Darious Williams"
+    "comp": "Avonte Maddox \u00d7 Darious Williams"
   },
   {
     "name": "Jamil Muhammad",
@@ -716,7 +740,7 @@
       "Raw technique in pass-rush moves",
       "Limited against run"
     ],
-    "comp": "Haason Reddick × Yannick Ngakoue"
+    "comp": "Haason Reddick \u00d7 Yannick Ngakoue"
   },
   {
     "name": "Eddie Czaplicki",
@@ -738,7 +762,8 @@
       "Limited in directional punting",
       "Needs to improve under pressure"
     ],
-    "comp": "Michael Dickson × JK Scott"
+    "comp": "Michael Dickson \u00d7 JK Scott",
+    "age": 22
   },
   {
     "name": "Akili Arnold",
@@ -760,7 +785,7 @@
       "Needs to improve run support",
       "Transfer history, adaptability questions"
     ],
-    "comp": "Antoine Winfield Jr. × Jordan Poyer"
+    "comp": "Antoine Winfield Jr. \u00d7 Jordan Poyer"
   },
   {
     "name": "R.J. Harvey",
@@ -782,7 +807,8 @@
       "Needs to improve pass protection",
       "Limited power between tackles"
     ],
-    "comp": "Isiah Pacheco × Jamaal Charles"
+    "comp": "Isiah Pacheco \u00d7 Jamaal Charles",
+    "age": 24
   },
   {
     "name": "Bhayshul Tuten",
@@ -804,7 +830,8 @@
       "Needs to improve pass protection",
       "Inconsistent ball security"
     ],
-    "comp": "Tony Pollard × Nyheim Hines"
+    "comp": "Tony Pollard \u00d7 Nyheim Hines",
+    "age": 22
   },
   {
     "name": "Trevor Etienne",
@@ -826,7 +853,8 @@
       "Limited starting experience",
       "Needs to improve pass protection"
     ],
-    "comp": "Devin Singletary × Clyde Edwards-Helaire"
+    "comp": "Devin Singletary \u00d7 Clyde Edwards-Helaire",
+    "age": 21
   },
   {
     "name": "Jarquez Hunter",
@@ -848,7 +876,8 @@
       "Inconsistent receiving production",
       "Needs to improve pass protection"
     ],
-    "comp": "Rhamondre Stevenson × Chuba Hubbard"
+    "comp": "Rhamondre Stevenson \u00d7 Chuba Hubbard",
+    "age": 22
   },
   {
     "name": "Jordan James",
@@ -870,7 +899,8 @@
       "Needs to improve receiving skills",
       "Competition for touches in committee"
     ],
-    "comp": "Alexander Mattison × Zack Moss"
+    "comp": "Alexander Mattison \u00d7 Zack Moss",
+    "age": 21
   },
   {
     "name": "Devin Neal",
@@ -892,7 +922,8 @@
       "Needs to improve vision",
       "Inconsistent contact balance"
     ],
-    "comp": "David Montgomery × Kareem Hunt"
+    "comp": "David Montgomery \u00d7 Kareem Hunt",
+    "age": 26
   },
   {
     "name": "Emeka Egbuka",
@@ -914,7 +945,8 @@
       "Injury history raises durability concerns",
       "Crowded Bucs WR room limits immediate volume"
     ],
-    "comp": "Garrett Wilson × Chris Olave"
+    "comp": "Garrett Wilson \u00d7 Chris Olave",
+    "age": 22
   },
   {
     "name": "Matthew Golden",
@@ -936,7 +968,8 @@
       "Needs to expand route tree",
       "Competes with Reed/Kraft for targets"
     ],
-    "comp": "Stefon Diggs × Calvin Ridley"
+    "comp": "Stefon Diggs \u00d7 Calvin Ridley",
+    "age": 21
   },
   {
     "name": "Jayden Higgins",
@@ -958,7 +991,8 @@
       "Route-running needs polish",
       "Inconsistent YAC production"
     ],
-    "comp": "Allen Lazard × Courtland Sutton"
+    "comp": "Allen Lazard \u00d7 Courtland Sutton",
+    "age": 22
   },
   {
     "name": "Tre Harris",
@@ -980,7 +1014,8 @@
       "Injury history limits durability",
       "Route tree needs diversification"
     ],
-    "comp": "Keenan Allen × Michael Thomas"
+    "comp": "Keenan Allen \u00d7 Michael Thomas",
+    "age": 23
   },
   {
     "name": "Elic Ayomanor",
@@ -1002,7 +1037,8 @@
       "Inconsistent production due to offense",
       "Drop concerns in traffic"
     ],
-    "comp": "D.K. Metcalf × Tee Higgins"
+    "comp": "D.K. Metcalf \u00d7 Tee Higgins",
+    "age": 22
   },
   {
     "name": "Isaiah Bond",
@@ -1024,7 +1060,8 @@
       "Limited route tree, needs intermediate game",
       "Target share capped in run-heavy scheme"
     ],
-    "comp": "Tyreek Hill × Marquise Brown"
+    "comp": "Tyreek Hill \u00d7 Marquise Brown",
+    "age": 21
   },
   {
     "name": "Evan Stewart",
@@ -1046,7 +1083,8 @@
       "Off-field maturity questions",
       "Inconsistent hands, drops in traffic"
     ],
-    "comp": "Jayden Reed × Elijah Moore"
+    "comp": "Jayden Reed \u00d7 Elijah Moore",
+    "age": 21
   },
   {
     "name": "Jack Bech",
@@ -1068,7 +1106,8 @@
       "Route-running needs polish",
       "Former TE transition, refining WR nuances"
     ],
-    "comp": "Hunter Renfrow × Anquan Boldin"
+    "comp": "Hunter Renfrow \u00d7 Anquan Boldin",
+    "age": 22
   },
   {
     "name": "Tory Horton",
@@ -1090,7 +1129,8 @@
       "Injury history impacts draft stock",
       "Needs to improve vs press coverage"
     ],
-    "comp": "Allen Robinson × Brandon Marshall"
+    "comp": "Allen Robinson \u00d7 Brandon Marshall",
+    "age": 22
   },
   {
     "name": "Jalen Royals",
@@ -1112,7 +1152,8 @@
       "Injury-shortened 2024 season",
       "Needs to add strength for NFL"
     ],
-    "comp": "Xavier Worthy × DeSean Jackson"
+    "comp": "Xavier Worthy \u00d7 DeSean Jackson",
+    "age": 22
   },
   {
     "name": "Isaac TeSlaa",
@@ -1134,7 +1175,8 @@
       "Needs to improve release vs press",
       "Inconsistent YAC due to build-up speed"
     ],
-    "comp": "Mike Williams × Jordy Nelson"
+    "comp": "Mike Williams \u00d7 Jordy Nelson",
+    "age": 23
   },
   {
     "name": "Jaylin Lane",
@@ -1156,7 +1198,8 @@
       "Limited route diversity",
       "Needs to prove consistency at NFL level"
     ],
-    "comp": "Rondale Moore × Tavon Austin"
+    "comp": "Rondale Moore \u00d7 Tavon Austin",
+    "age": 23
   },
   {
     "name": "Nick Nash",
@@ -1178,7 +1221,8 @@
       "Needs to refine routes for NFL separation",
       "Undrafted-level athleticism, ceiling limited"
     ],
-    "comp": "Darnell Mooney × Curtis Samuel"
+    "comp": "Darnell Mooney \u00d7 Curtis Samuel",
+    "age": 26
   },
   {
     "name": "Kyle Williams",
@@ -1200,7 +1244,8 @@
       "Limited route tree, needs intermediate polish",
       "Inconsistent hands under pressure"
     ],
-    "comp": "DeVonta Smith × John Ross"
+    "comp": "DeVonta Smith \u00d7 John Ross",
+    "age": 22
   },
   {
     "name": "Xavier Restrepo",
@@ -1222,7 +1267,8 @@
       "Struggles vs press-man coverage",
       "Target share capped in crowded WR room"
     ],
-    "comp": "Jarvis Landry × Cole Beasley"
+    "comp": "Jarvis Landry \u00d7 Cole Beasley",
+    "age": 23
   },
   {
     "name": "Pat Bryant",
@@ -1244,7 +1290,8 @@
       "Late breakout (age 20), raw route-running",
       "Limited YAC due to lack of burst"
     ],
-    "comp": "Michael Thomas × Laquon Treadwell"
+    "comp": "Michael Thomas \u00d7 Laquon Treadwell",
+    "age": 22
   },
   {
     "name": "Dane Key",
@@ -1266,7 +1313,8 @@
       "Limited YAC production, straight-line mover",
       "Inconsistent college production due to QB play"
     ],
-    "comp": "Laviska Shenault × Chase Claypool"
+    "comp": "Laviska Shenault \u00d7 Chase Claypool",
+    "age": 22
   },
   {
     "name": "Demetrius Knight Jr.",
@@ -1288,7 +1336,8 @@
       "Limited blitz experience",
       "Teammate trade requests could affect role"
     ],
-    "comp": "Germaine Pratt × Lavonte David"
+    "comp": "Germaine Pratt \u00d7 Lavonte David",
+    "age": 25
   },
   {
     "name": "Nick Martin",
@@ -1310,7 +1359,8 @@
       "Injury history limits durability",
       "Needs to improve block shedding"
     ],
-    "comp": "Nick Bolton × Devin Lloyd"
+    "comp": "Nick Bolton \u00d7 Devin Lloyd",
+    "age": 22
   },
   {
     "name": "Jack Kiser",
@@ -1332,7 +1382,8 @@
       "Size may hinder vs. bigger TEs",
       "Needs more blitz opportunities for sacks"
     ],
-    "comp": "Drue Tranquill × Jeremiah Owusu-Koramoah"
+    "comp": "Drue Tranquill \u00d7 Jeremiah Owusu-Koramoah",
+    "age": 24
   },
   {
     "name": "Danny Stutsman",
@@ -1354,7 +1405,8 @@
       "Needs to improve in pass defense",
       "Raw in blitz packages"
     ],
-    "comp": "Bobby Okereke × Quay Walker"
+    "comp": "Bobby Okereke \u00d7 Quay Walker",
+    "age": 22
   },
   {
     "name": "Cody Simon",
@@ -1376,7 +1428,8 @@
       "Needs to develop pass-rush skills",
       "Size average for position"
     ],
-    "comp": "Jerome Baker × Christian Harris"
+    "comp": "Jerome Baker \u00d7 Christian Harris",
+    "age": 23
   },
   {
     "name": "Barrett Carter",
@@ -1398,7 +1451,8 @@
       "Needs to add strength for run defense",
       "Inconsistent tackling"
     ],
-    "comp": "Isaiah Simmons × Jeremiah Trotter Jr."
+    "comp": "Isaiah Simmons \u00d7 Jeremiah Trotter Jr.",
+    "age": 22
   },
   {
     "name": "Teddye Buchanan",
@@ -1420,7 +1474,8 @@
       "Needs to improve run support",
       "Size long but lean"
     ],
-    "comp": "Patrick Queen × Trenton Simpson"
+    "comp": "Patrick Queen \u00d7 Trenton Simpson",
+    "age": 22
   },
   {
     "name": "Colston Loveland",
@@ -1442,7 +1497,8 @@
       "Blocking technique raw; needs strength gains",
       "Route tree limited; more slot than diverse"
     ],
-    "comp": "Sam LaPorta × George Kittle"
+    "comp": "Sam LaPorta \u00d7 George Kittle",
+    "age": 21
   },
   {
     "name": "Tyler Warren",
@@ -1464,7 +1520,8 @@
       "Needs to refine route-running for separation",
       "Injury history from college wear"
     ],
-    "comp": "Dallas Goedert × Mike Gesicki"
+    "comp": "Dallas Goedert \u00d7 Mike Gesicki",
+    "age": 23
   },
   {
     "name": "Mason Taylor",
@@ -1486,7 +1543,8 @@
       "Limited YAC (5.4 avg); not explosive after catch",
       "Only 14 missed tackles forced; lacks power"
     ],
-    "comp": "Dalton Kincaid × Kyle Pitts"
+    "comp": "Dalton Kincaid \u00d7 Kyle Pitts",
+    "age": 21
   },
   {
     "name": "Elijah Arroyo",
@@ -1508,7 +1566,8 @@
       "Competition with Fant delays role until 2026",
       "Dependent on Kupp's decline for targets"
     ],
-    "comp": "David Njoku × Evan Engram"
+    "comp": "David Njoku \u00d7 Evan Engram",
+    "age": 22
   },
   {
     "name": "Terrance Ferguson",
@@ -1530,7 +1589,8 @@
       "Needs to prove blocking for three-down role",
       "Missed tackles forced (22nd); average elusiveness"
     ],
-    "comp": "Greg Dulcich × Pat Freiermuth"
+    "comp": "Greg Dulcich \u00d7 Pat Freiermuth",
+    "age": 22
   },
   {
     "name": "Harold Fannin Jr.",
@@ -1552,7 +1612,8 @@
       "Small-school adjustment to NFL speed",
       "Inconsistent route-running"
     ],
-    "comp": "Hunter Henry × Hayden Hurst"
+    "comp": "Hunter Henry \u00d7 Hayden Hurst",
+    "age": 21
   },
   {
     "name": "Oronde Gadsden II",
@@ -1574,7 +1635,8 @@
       "Depth chart delays immediate impact",
       "Limited blocking; more WR than traditional TE"
     ],
-    "comp": "Mo Alie-Cox × Jordan Reed"
+    "comp": "Mo Alie-Cox \u00d7 Jordan Reed",
+    "age": 22
   },
   {
     "name": "Gunnar Helm",
@@ -1596,7 +1658,8 @@
       "Limited college production",
       "Blocking technique inconsistent"
     ],
-    "comp": "Cade Otton × Tucker Kraft"
+    "comp": "Cade Otton \u00d7 Tucker Kraft",
+    "age": 22
   },
   {
     "name": "Luke Lachey",
@@ -1618,7 +1681,8 @@
       "Injury history from college",
       "Route tree needs expansion"
     ],
-    "comp": "Erick All × Luke Schoonmaker"
+    "comp": "Erick All \u00d7 Luke Schoonmaker",
+    "age": 24
   },
   {
     "name": "Mitchell Evans",
@@ -1640,7 +1704,8 @@
       "Needs to improve separation vs. LBs",
       "Depth role initially behind Sanders"
     ],
-    "comp": "Cole Kmet × Dawson Knox"
+    "comp": "Cole Kmet \u00d7 Dawson Knox",
+    "age": 22
   },
   {
     "name": "Abdul Carter",
@@ -1663,7 +1728,7 @@
       "Shoulder injury history",
       "Limited experience as pure pass rusher"
     ],
-    "comp": "Micah Parsons × Von Miller"
+    "comp": "Micah Parsons \u00d7 Von Miller"
   },
   {
     "name": "James Pearce Jr.",
@@ -1685,7 +1750,8 @@
       "Inconsistent motor at times",
       "Needs to add strength for NFL level"
     ],
-    "comp": "Myles Garrett × Danielle Hunter"
+    "comp": "Myles Garrett \u00d7 Danielle Hunter",
+    "age": 21
   },
   {
     "name": "Mykel Williams",
@@ -1707,7 +1773,8 @@
       "Injury-limited 2024 tape",
       "Needs to develop pass-rush plan"
     ],
-    "comp": "Will Anderson Jr. × Chase Young"
+    "comp": "Will Anderson Jr. \u00d7 Chase Young",
+    "age": 21
   },
   {
     "name": "Shemar Stewart",
@@ -1729,7 +1796,8 @@
       "Needs pass-rush plan beyond power",
       "Can be stiff in coverage when dropping"
     ],
-    "comp": "Travon Walker × Aidan Hutchinson"
+    "comp": "Travon Walker \u00d7 Aidan Hutchinson",
+    "age": 21
   },
   {
     "name": "Nic Scourton",
@@ -1751,7 +1819,8 @@
       "Developmental pass moves",
       "Limited athletic upside"
     ],
-    "comp": "Josh Allen (JAX) × Montez Sweat"
+    "comp": "Josh Allen (JAX) \u00d7 Montez Sweat",
+    "age": 20
   },
   {
     "name": "Derrick Moore",
@@ -1773,7 +1842,8 @@
       "Ceiling as rotational player",
       "Needs to develop counter moves"
     ],
-    "comp": "Brian Burns × Khalil Mack"
+    "comp": "Brian Burns \u00d7 Khalil Mack",
+    "age": 22
   },
   {
     "name": "Landon Jackson",
@@ -1795,7 +1865,8 @@
       "Raw technique needs development",
       "Injury concerns from college"
     ],
-    "comp": "Gregory Rousseau × Kayvon Thibodeaux"
+    "comp": "Gregory Rousseau \u00d7 Kayvon Thibodeaux",
+    "age": 22
   },
   {
     "name": "Ashton Gillotte",
@@ -1817,7 +1888,8 @@
       "Limited against bigger tackles",
       "Needs to add strength"
     ],
-    "comp": "Aaron Donald (style) × Chris Jones"
+    "comp": "Aaron Donald (style) \u00d7 Chris Jones",
+    "age": 22
   },
   {
     "name": "Princely Umanmielen",
@@ -1839,7 +1911,8 @@
       "Injury concerns throughout college",
       "Raw technique limits consistency"
     ],
-    "comp": "Jermaine Johnson × Odafe Oweh"
+    "comp": "Jermaine Johnson \u00d7 Odafe Oweh",
+    "age": 23
   },
   {
     "name": "Jack Sawyer",
@@ -1861,7 +1934,8 @@
       "Rotational ceiling at NFL level",
       "Lacks elite pass-rush moves"
     ],
-    "comp": "Maxx Crosby × Joey Bosa"
+    "comp": "Maxx Crosby \u00d7 Joey Bosa",
+    "age": 23
   },
   {
     "name": "Mason Graham",
@@ -1883,7 +1957,8 @@
       "Injury history from college",
       "Needs to add pass-rush counters"
     ],
-    "comp": "Aaron Donald × Javon Hargrave"
+    "comp": "Aaron Donald \u00d7 Javon Hargrave",
+    "age": 21
   },
   {
     "name": "Kenneth Grant",
@@ -1905,7 +1980,8 @@
       "Conditioning questions at NFL level",
       "Limited athletic upside"
     ],
-    "comp": "Quinnen Williams × Vita Vea"
+    "comp": "Quinnen Williams \u00d7 Vita Vea",
+    "age": 21
   },
   {
     "name": "Walter Nolen",
@@ -1927,7 +2003,8 @@
       "Needs polish in technique",
       "Can be inconsistent game to game"
     ],
-    "comp": "Jeffery Simmons × Christian Wilkins"
+    "comp": "Jeffery Simmons \u00d7 Christian Wilkins",
+    "age": 21
   },
   {
     "name": "Tyleik Williams",
@@ -1949,7 +2026,8 @@
       "Injury-prone throughout college",
       "Needs to improve hand usage"
     ],
-    "comp": "Kenny Clark × Grover Stewart"
+    "comp": "Kenny Clark \u00d7 Grover Stewart",
+    "age": 22
   },
   {
     "name": "Derrick Harmon",
@@ -1971,7 +2049,8 @@
       "Stamina issues in long drives",
       "Needs to add strength"
     ],
-    "comp": "Calais Campbell × Sheldon Rankins"
+    "comp": "Calais Campbell \u00d7 Sheldon Rankins",
+    "age": 21
   },
   {
     "name": "Deone Walker",
@@ -1993,7 +2072,8 @@
       "Conditioning concerns with size",
       "Limited athletic ceiling"
     ],
-    "comp": "Dexter Lawrence × A'Shawn Robinson"
+    "comp": "Dexter Lawrence \u00d7 A'Shawn Robinson",
+    "age": 21
   },
   {
     "name": "T.J. Sanders",
@@ -2015,7 +2095,8 @@
       "Raw technique needs development",
       "Can be inconsistent"
     ],
-    "comp": "Ed Oliver × Javon Kinlaw"
+    "comp": "Ed Oliver \u00d7 Javon Kinlaw",
+    "age": 21
   },
   {
     "name": "Mason Pline",
@@ -2037,7 +2118,8 @@
       "Needs refinement in technique",
       "Limited athletic testing"
     ],
-    "comp": "Grady Jarrett × Larry Ogunjobi"
+    "comp": "Grady Jarrett \u00d7 Larry Ogunjobi",
+    "age": 25
   },
   {
     "name": "Josiah Stewart",
@@ -2059,7 +2141,8 @@
       "Limited ceiling at NFL level",
       "Needs to add strength"
     ],
-    "comp": "Shaka Toney × BJ Ojulari"
+    "comp": "Shaka Toney \u00d7 BJ Ojulari",
+    "age": 22
   },
   {
     "name": "Brandon Dorlus",
@@ -2081,7 +2164,8 @@
       "Scheme fit issues",
       "Needs to develop pass-rush moves"
     ],
-    "comp": "DeForest Buckner × Cameron Jordan"
+    "comp": "DeForest Buckner \u00d7 Cameron Jordan",
+    "age": 24
   },
   {
     "name": "Malaki Starks",
@@ -2103,7 +2187,8 @@
       "Run support average; better in coverage",
       "Needs to add strength for NFL contact"
     ],
-    "comp": "Kyle Hamilton × Jessie Bates"
+    "comp": "Kyle Hamilton \u00d7 Jessie Bates",
+    "age": 21
   },
   {
     "name": "Nick Emmanwori",
@@ -2125,7 +2210,8 @@
       "Bites on play-action; developmental in coverage",
       "Raw technique needs refinement"
     ],
-    "comp": "Kam Chancellor × Derwin James"
+    "comp": "Kam Chancellor \u00d7 Derwin James",
+    "age": 21
   },
   {
     "name": "Lathan Ransom",
@@ -2147,7 +2233,8 @@
       "Injury history raises durability concerns",
       "Needs polish in man coverage"
     ],
-    "comp": "Xavier McKinney × Antoine Winfield Jr."
+    "comp": "Xavier McKinney \u00d7 Antoine Winfield Jr.",
+    "age": 23
   },
   {
     "name": "Sonny Styles",
@@ -2169,7 +2256,8 @@
       "Limited tape; developmental prospect",
       "Needs to refine technique at safety"
     ],
-    "comp": "Isaiah Simmons × Budda Baker"
+    "comp": "Isaiah Simmons \u00d7 Budda Baker",
+    "age": 20
   },
   {
     "name": "Jaden Hicks",
@@ -2191,7 +2279,8 @@
       "Penalty-prone; plays too aggressive",
       "Limited range as deep safety"
     ],
-    "comp": "Jamal Adams × Tyrann Mathieu"
+    "comp": "Jamal Adams \u00d7 Tyrann Mathieu",
+    "age": 22
   },
   {
     "name": "Malachi Moore",
@@ -2213,7 +2302,8 @@
       "Injury concerns from college",
       "May struggle vs. bigger targets"
     ],
-    "comp": "Mike Hilton × Jalen Pitre"
+    "comp": "Mike Hilton \u00d7 Jalen Pitre",
+    "age": 23
   },
   {
     "name": "Kevin Winston Jr.",
@@ -2235,7 +2325,8 @@
       "Plays too aggressive; needs discipline",
       "Inconsistent run support"
     ],
-    "comp": "Minkah Fitzpatrick × Marcus Williams"
+    "comp": "Minkah Fitzpatrick \u00d7 Marcus Williams",
+    "age": 21
   },
   {
     "name": "Billy Bowman Jr.",
@@ -2257,7 +2348,8 @@
       "Run defense weak; coverage specialist",
       "Developmental prospect needs time"
     ],
-    "comp": "Eddie Jackson × Kevin Byard"
+    "comp": "Eddie Jackson \u00d7 Kevin Byard",
+    "age": 22
   },
   {
     "name": "Jonas Sanker",
@@ -2279,7 +2371,8 @@
       "Speed concerns vs. faster WRs",
       "One-dimensional as box safety"
     ],
-    "comp": "Donovan Wilson × Jaquan Brisker"
+    "comp": "Donovan Wilson \u00d7 Jaquan Brisker",
+    "age": 22
   },
   {
     "name": "Dillon Thieneman",
@@ -2301,7 +2394,8 @@
       "Struggles in man coverage vs. speed",
       "Small-school feel; needs adjustment"
     ],
-    "comp": "Harrison Smith × Justin Simmons"
+    "comp": "Harrison Smith \u00d7 Justin Simmons",
+    "age": 20
   },
   {
     "name": "Jahdae Barron",
@@ -2323,7 +2417,8 @@
       "Penalty risks with grabby hands",
       "May struggle vs. bigger receivers"
     ],
-    "comp": "Trent McDuffie × L'Jarius Sneed"
+    "comp": "Trent McDuffie \u00d7 L'Jarius Sneed",
+    "age": 23
   },
   {
     "name": "Maxwell Hairston",
@@ -2345,7 +2440,8 @@
       "Tackling average; missed tackle concerns",
       "Recovery speed limitations"
     ],
-    "comp": "Asante Samuel Jr. × Marcus Peters"
+    "comp": "Asante Samuel Jr. \u00d7 Marcus Peters",
+    "age": 21
   },
   {
     "name": "Tacario Davis",
@@ -2367,7 +2463,8 @@
       "Grabby in coverage; penalty-prone",
       "Inconsistent technique in zone"
     ],
-    "comp": "Xavien Howard × Tariq Woolen"
+    "comp": "Xavien Howard \u00d7 Tariq Woolen",
+    "age": 20
   },
   {
     "name": "Benjamin Morrison",
@@ -2389,7 +2486,8 @@
       "Average athleticism; not elite speed",
       "May struggle in pure man coverage"
     ],
-    "comp": "Darius Slay × Jaylon Johnson"
+    "comp": "Darius Slay \u00d7 Jaylon Johnson",
+    "age": 21
   },
   {
     "name": "Denzel Burke",
@@ -2411,7 +2509,8 @@
       "Deep speed average; recovery issues",
       "Needs to add physicality"
     ],
-    "comp": "Stephon Gilmore × Sauce Gardner"
+    "comp": "Stephon Gilmore \u00d7 Sauce Gardner",
+    "age": 22
   },
   {
     "name": "Shavon Revel",
@@ -2433,7 +2532,8 @@
       "Gets beat by quicker receivers",
       "Raw technique needs development"
     ],
-    "comp": "Joey Porter Jr. × Carlton Davis"
+    "comp": "Joey Porter Jr. \u00d7 Carlton Davis",
+    "age": 24
   },
   {
     "name": "Daylen Everette",
@@ -2455,7 +2555,7 @@
       "Injury-prone; durability questions",
       "Limited to slot/nickel role"
     ],
-    "comp": "Kenny Moore × Mike Hilton"
+    "comp": "Kenny Moore \u00d7 Mike Hilton"
   },
   {
     "name": "Cobie Durant",
@@ -2477,7 +2577,8 @@
       "Tackling weak; avoids contact",
       "Needs time to develop consistency"
     ],
-    "comp": "Avonte Maddox × Darious Williams"
+    "comp": "Avonte Maddox \u00d7 Darious Williams",
+    "age": 27
   },
   {
     "name": "Jabbar Muhammad",
@@ -2499,7 +2600,8 @@
       "Grabby hands; penalties common",
       "Inconsistent tackling technique"
     ],
-    "comp": "Rasul Douglas × Charvarius Ward"
+    "comp": "Rasul Douglas \u00d7 Charvarius Ward",
+    "age": 23
   },
   {
     "name": "Mason Graham",
@@ -2525,7 +2627,7 @@
       "Limited bend; injury history from college",
       "Needs to add pass-rush counters"
     ],
-    "comp": "Aaron Donald × Javon Hargrave"
+    "comp": "Aaron Donald \u00d7 Javon Hargrave"
   },
   {
     "name": "Walter Nolen",
@@ -2549,7 +2651,7 @@
       "Raw hand usage; inconsistent leverage",
       "Needs polish in technique"
     ],
-    "comp": "Jeffery Simmons × Christian Wilkins"
+    "comp": "Jeffery Simmons \u00d7 Christian Wilkins"
   },
   {
     "name": "Kenneth Grant",
@@ -2573,7 +2675,7 @@
       "Limited pass-rush; conditioning questions",
       "Physical limitations with size"
     ],
-    "comp": "Quinnen Williams × Vita Vea"
+    "comp": "Quinnen Williams \u00d7 Vita Vea"
   },
   {
     "name": "Derrick Harmon",
@@ -2597,11 +2699,11 @@
       "Limited pass-rush variety",
       "Stamina issues in long drives"
     ],
-    "comp": "Calais Campbell × Sheldon Rankins"
+    "comp": "Calais Campbell \u00d7 Sheldon Rankins"
   },
   {
     "name": "Tyleik Williams",
-    "position": "DT", 
+    "position": "DT",
     "college": "Ohio State",
     "team": "Detroit Lions",
     "pick": "#28",
@@ -2621,7 +2723,7 @@
       "Limited athleticism; straight-line mover",
       "Injury-prone throughout college"
     ],
-    "comp": "Kenny Clark × Grover Stewart"
+    "comp": "Kenny Clark \u00d7 Grover Stewart"
   },
   {
     "name": "T.J. Sanders",
@@ -2645,12 +2747,12 @@
       "Raw technique needs development",
       "Can be inconsistent"
     ],
-    "comp": "Ed Oliver × Javon Kinlaw"
+    "comp": "Ed Oliver \u00d7 Javon Kinlaw"
   },
   {
     "name": "Omarr Norman-Lott",
     "position": "DT",
-    "college": "Tennessee", 
+    "college": "Tennessee",
     "team": "Kansas City Chiefs",
     "pick": "#60",
     "height": "6'3\"",
@@ -2669,7 +2771,7 @@
       "Needs better hand usage and pass-rush plans",
       "Limited pass-rush production"
     ],
-    "comp": "Grady Jarrett × Larry Ogunjobi"
+    "comp": "Grady Jarrett \u00d7 Larry Ogunjobi"
   },
   {
     "name": "Deone Walker",
@@ -2693,7 +2795,7 @@
       "Slow first step; conditioning concerns",
       "Limited athletic ceiling"
     ],
-    "comp": "Dexter Lawrence × A'Shawn Robinson"
+    "comp": "Dexter Lawrence \u00d7 A'Shawn Robinson"
   },
   {
     "name": "Brandon Dorlus",
@@ -2717,7 +2819,7 @@
       "Scheme fit issues",
       "Needs to develop pass-rush moves"
     ],
-    "comp": "DeForest Buckner × Cameron Jordan"
+    "comp": "DeForest Buckner \u00d7 Cameron Jordan"
   },
   {
     "name": "Darius Alexander",
@@ -2741,7 +2843,7 @@
       "Small-school adjustment",
       "Needs to prove vs NFL competition"
     ],
-    "comp": "Javon Hargrave × Kenny Clark"
+    "comp": "Javon Hargrave \u00d7 Kenny Clark"
   },
   {
     "name": "C.J. West",
@@ -2765,7 +2867,7 @@
       "Needs to prove vs NFL level",
       "Average athleticism"
     ],
-    "comp": "Vita Vea × Linval Joseph"
+    "comp": "Vita Vea \u00d7 Linval Joseph"
   },
   {
     "name": "Alfred Collins",
@@ -2789,7 +2891,7 @@
       "Needs to improve hand usage",
       "Average athleticism"
     ],
-    "comp": "A'Shawn Robinson × Davon Godchaux"
+    "comp": "A'Shawn Robinson \u00d7 Davon Godchaux"
   },
   {
     "name": "Josiah Stewart",
@@ -2813,7 +2915,7 @@
       "Limited ceiling at NFL level",
       "Needs to add strength"
     ],
-    "comp": "Shaka Toney × BJ Ojulari"
+    "comp": "Shaka Toney \u00d7 BJ Ojulari"
   },
   {
     "name": "Tonka Hemingway",
@@ -2837,7 +2939,7 @@
       "Needs to develop counters",
       "Inconsistent production"
     ],
-    "comp": "Larry Ogunjobi × Justin Jones"
+    "comp": "Larry Ogunjobi \u00d7 Justin Jones"
   },
   {
     "name": "McKinnley Jackson",
@@ -2861,7 +2963,7 @@
       "Conditioning concerns",
       "Straight-line mover"
     ],
-    "comp": "Grover Stewart × Davon Godchaux"
+    "comp": "Grover Stewart \u00d7 Davon Godchaux"
   },
   {
     "name": "Rueben Bain Jr.",
@@ -2885,7 +2987,7 @@
       "Raw technique needs development",
       "Can be inconsistent"
     ],
-    "comp": "Christian Wilkins × Ed Oliver"
+    "comp": "Christian Wilkins \u00d7 Ed Oliver"
   },
   {
     "name": "Bear Alexander",
@@ -2909,7 +3011,7 @@
       "Small-school adjustment",
       "Needs to prove vs NFL competition"
     ],
-    "comp": "Javon Kinlaw × Jalen Carter"
+    "comp": "Javon Kinlaw \u00d7 Jalen Carter"
   },
   {
     "name": "Hero Kanu",
@@ -2933,7 +3035,7 @@
       "Limited ceiling",
       "Needs strength addition"
     ],
-    "comp": "BJ Ojulari × Shaka Toney"
+    "comp": "BJ Ojulari \u00d7 Shaka Toney"
   },
   {
     "name": "Mason Pline",
@@ -2957,7 +3059,7 @@
       "Needs technique refinement",
       "Limited athletic testing"
     ],
-    "comp": "Grady Jarrett × Larry Ogunjobi"
+    "comp": "Grady Jarrett \u00d7 Larry Ogunjobi"
   },
   {
     "name": "Landon Jackson",
@@ -2981,7 +3083,7 @@
       "Raw technique needs development",
       "Injury concerns from college"
     ],
-    "comp": "Gregory Rousseau × Kayvon Thibodeaux"
+    "comp": "Gregory Rousseau \u00d7 Kayvon Thibodeaux"
   },
   {
     "name": "Kyree Drake",
@@ -3005,6 +3107,6 @@
       "Limited ceiling",
       "Needs to add strength"
     ],
-    "comp": "Shaka Toney × BJ Ojulari"
+    "comp": "Shaka Toney \u00d7 BJ Ojulari"
   }
 ]
