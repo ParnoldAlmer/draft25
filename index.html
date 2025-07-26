@@ -1092,7 +1092,10 @@
             <button class="filter-btn" onclick="filterPlayers('WR')">WR</button>
             <button class="filter-btn" onclick="filterPlayers('TE')">TE</button>
             <button class="filter-btn" onclick="filterPlayers('LB')">LB</button>
-            <button class="filter-btn" onclick="filterPlayers('IDP')">IDP</button>
+            <button class="filter-btn" onclick="filterPlayers('DL')">DL</button>
+            <button class="filter-btn" onclick="filterPlayers('S')">S</button>
+            <button class="filter-btn" onclick="filterPlayers('CB')">CB</button>
+            <button class="filter-btn" onclick="filterPlayers('IDP')">All IDP</button>
             <button class="filter-btn usc-filter" onclick="filterPlayers('USC')">
                 <span class="usc-logo">⚔️</span>
                 USC
@@ -1283,7 +1286,7 @@
             if (position !== 'all') {
                 if (position === 'IDP') {
                     filtered = players.filter(p => 
-                        ['EDGE', 'DT', 'LB', 'CB', 'S'].some(pos => p.position.includes(pos))
+                        ['EDGE', 'DT', 'LB', 'CB', 'S', 'DL'].some(pos => p.position.includes(pos))
                     );
                 } else if (position === 'USC') {
                     filtered = players.filter(p => p.college === 'USC');
