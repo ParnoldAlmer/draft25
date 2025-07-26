@@ -404,6 +404,99 @@
             color: var(--text);
         }
 
+        .changelog-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--highlight);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .changelog-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .changelog-content {
+            max-width: 900px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .changelog-items {
+            margin-top: 20px;
+        }
+
+        .changelog-item {
+            background: var(--card-bg);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--highlight);
+        }
+
+        .changelog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .changelog-version {
+            background: var(--green);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .changelog-date {
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        .changelog-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--highlight);
+            margin-bottom: 10px;
+        }
+
+        .changelog-description {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .changelog-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .changelog-features li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .changelog-features li::before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+
         @media (max-width: 768px) {
             .players-grid {
                 grid-template-columns: 1fr;
@@ -424,6 +517,7 @@
         <header>
             <h1>2025 Dynasty Rookie Draft Guide</h1>
             <div class="subtitle">Champions League Dynasty - July 26, 2025 at 7:45 PM PST</div>
+            <button class="changelog-btn" onclick="showChangelog()">📋 What's New</button>
             <div class="countdown-container">
                 <div class="countdown-label">Draft Starts In:</div>
                 <div class="countdown" id="countdown">
@@ -488,6 +582,16 @@
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal()">&times;</span>
             <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="changelogModal">
+        <div class="modal-content changelog-content">
+            <span class="close-modal" onclick="closeChangelog()">&times;</span>
+            <h2>📋 Draft Guide Updates</h2>
+            <div class="changelog-items" id="changelogItems">
+                <!-- Changelog items will be inserted here -->
+            </div>
         </div>
     </div>
 
@@ -2092,6 +2196,185 @@
         document.getElementById('searchBox').addEventListener('input', searchPlayers);
         renderPlayers(players);
         
+        // Changelog data
+        const changelogData = [
+            {
+                version: "v2.8",
+                date: "2024-12-19",
+                title: "Changelog Modal & Rankings Alignment",
+                description: "Added changelog tracking and aligned all rankings with FantasyPros expert consensus",
+                features: [
+                    "Added changelog modal to track all updates",
+                    "Aligned all player rankings with FantasyPros expert consensus",
+                    "Added automatic sorting by overall rank",
+                    "Updated top 20 WR prospect rankings"
+                ]
+            },
+            {
+                version: "v2.7",
+                date: "2024-12-19",
+                title: "Wide Receiver Expansion",
+                description: "Added comprehensive top 20 WR rookie prospects with FantasyPros alignment",
+                features: [
+                    "Added 20 top WR prospects (Luther Burden III, Tetairoa McMillan, etc.)",
+                    "Updated all WR rankings based on expert consensus",
+                    "Enhanced player comparisons and scouting reports"
+                ]
+            },
+            {
+                version: "v2.6",
+                date: "2024-12-19",
+                title: "FantasyPros Integration",
+                description: "Integrated FantasyPros rankings for accurate expert consensus",
+                features: [
+                    "Researched and integrated FantasyPros expert rankings",
+                    "Updated all player overall and position rankings",
+                    "Ensured rankings consistency across all positions"
+                ]
+            },
+            {
+                version: "v2.5",
+                date: "2024-12-19",
+                title: "Running Back Prospects",
+                description: "Added comprehensive RB prospect rankings and profiles",
+                features: [
+                    "Added top 10 RB prospects (Ashton Jeanty, TreVeyon Henderson, etc.)",
+                    "Completed missing RB #10 ranking",
+                    "Enhanced RB scouting reports and NFL comparisons"
+                ]
+            },
+            {
+                version: "v2.4",
+                date: "2024-12-19",
+                title: "USC Team Filter",
+                description: "Added USC-specific filter with team branding",
+                features: [
+                    "Added USC filter button with team colors",
+                    "Added 10 USC prospects (Miller Moss, Woody Marks, etc.)",
+                    "Enhanced filtering system for team-based searches"
+                ]
+            },
+            {
+                version: "v2.3",
+                date: "2024-12-19",
+                title: "Quarterback Rookies",
+                description: "Added top 10 QB rookie prospects",
+                features: [
+                    "Added 10 QB prospects (Shedeur Sanders, Cam Ward, etc.)",
+                    "Enhanced QB scouting reports",
+                    "Updated position rankings for QBs"
+                ]
+            },
+            {
+                version: "v2.2",
+                date: "2024-12-19",
+                title: "UI Improvements",
+                description: "Cleaned up position badges and improved rankings display",
+                features: [
+                    "Removed redundant position tags",
+                    "Enhanced ranking badge display",
+                    "Improved mobile responsiveness"
+                ]
+            },
+            {
+                version: "v2.1",
+                date: "2024-12-19",
+                title: "Player Rankings System",
+                description: "Added comprehensive ranking system for all players",
+                features: [
+                    "Added overall rank badges",
+                    "Added position rank badges", 
+                    "Color-coded ranking system (gold/silver/bronze)",
+                    "Ranking display for all player cards"
+                ]
+            },
+            {
+                version: "v2.0",
+                date: "2024-12-19",
+                title: "League Information",
+                description: "Added comprehensive league format and rules",
+                features: [
+                    "Added detailed league format section",
+                    "Added scoring system information",
+                    "Added roster requirements and draft rules",
+                    "Enhanced introduction section"
+                ]
+            },
+            {
+                version: "v1.5",
+                date: "2024-12-19",
+                title: "Draft Countdown Timer",
+                description: "Added real-time countdown to draft day",
+                features: [
+                    "Live countdown timer to July 26, 2025 7:45 PM PST",
+                    "Real-time updates every second",
+                    "Draft day celebration message",
+                    "Mobile-optimized countdown display"
+                ]
+            },
+            {
+                version: "v1.0",
+                date: "2024-12-19",
+                title: "Initial Release",
+                description: "Complete dynasty rookie draft guide with player profiles and filtering",
+                features: [
+                    "87 player prospect profiles with detailed scouting",
+                    "Position filtering (QB, RB, WR, TE, DEF, K)",
+                    "Player search functionality",
+                    "Modal player detail views",
+                    "Responsive grid layout",
+                    "Dynasty-focused prospect analysis"
+                ]
+            }
+        ];
+
+        // Changelog functions
+        function showChangelog() {
+            populateChangelog();
+            document.getElementById('changelogModal').style.display = 'block';
+        }
+
+        function closeChangelog() {
+            document.getElementById('changelogModal').style.display = 'none';
+        }
+
+        function populateChangelog() {
+            const container = document.getElementById('changelogItems');
+            container.innerHTML = '';
+            
+            changelogData.forEach(item => {
+                const changelogItem = document.createElement('div');
+                changelogItem.className = 'changelog-item';
+                
+                changelogItem.innerHTML = `
+                    <div class="changelog-header">
+                        <span class="changelog-version">${item.version}</span>
+                        <span class="changelog-date">${item.date}</span>
+                    </div>
+                    <div class="changelog-title">${item.title}</div>
+                    <div class="changelog-description">${item.description}</div>
+                    <ul class="changelog-features">
+                        ${item.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                `;
+                
+                container.appendChild(changelogItem);
+            });
+        }
+
+        // Update modal click handler to include changelog modal
+        window.onclick = function(event) {
+            const playerModal = document.getElementById('playerModal');
+            const changelogModal = document.getElementById('changelogModal');
+            
+            if (event.target === playerModal) {
+                playerModal.style.display = 'none';
+            }
+            if (event.target === changelogModal) {
+                changelogModal.style.display = 'none';
+            }
+        }
+
         // Start countdown
         updateCountdown();
         setInterval(updateCountdown, 1000);
