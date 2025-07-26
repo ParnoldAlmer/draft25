@@ -43,7 +43,7 @@
     "weight": "223 lbs",
     "age": 22.9,
     "overallRank": 2,
-    "positionRank": 2,
+    "positionRank": 1,
     "combine": {
       "40yard": null,
       "bench": null,
@@ -179,7 +179,7 @@
     "height": "6'2\"",
     "weight": "220 lbs",
     "overallRank": 7,
-    "positionRank": 1,
+    "positionRank": 2,
     "strengths": [
       "Strong arm with velocity and touch",
       "Mobile in pocket, adds rushing value",
