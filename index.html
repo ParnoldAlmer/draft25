@@ -342,6 +342,13 @@
             font-size: 0.85em;
         }
 
+        .rank-tags {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-end;
+        }
+        
         .overall-rank {
             background: var(--gold);
             color: var(--primary);
@@ -351,6 +358,18 @@
             font-weight: bold;
             min-width: 50px;
             text-align: center;
+        }
+        
+        .position-tag {
+            background: var(--highlight);
+            color: var(--text);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+            min-width: 35px;
+            text-align: center;
+            opacity: 0.9;
         }
 
         .player-measurements {
@@ -1083,7 +1102,10 @@
                             </div>
                             ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 8px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 8px;">${player.position}</div>`}
                         </div>
-                        <div class="overall-rank">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
+                        <div class="rank-tags">
+                            <div class="overall-rank">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
+                            ${player.positionRank ? `<div class="position-tag">${player.position}${player.positionRank}</div>` : `<div class="position-tag">${player.position}</div>`}
+                        </div>
                     </div>
                     <div class="player-measurements">
                         <span>${player.height}</span>
