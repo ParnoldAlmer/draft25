@@ -1202,61 +1202,66 @@
             grid.innerHTML = '';
             
             playersToRender.forEach(player => {
-                const card = document.createElement('div');
-                card.className = player.college === 'USC' ? 'player-card usc-card' : 'player-card';
-                // Removed modal click handler - all info now displayed on card
-                
-                card.innerHTML = `
-                    <div class="player-header">
-                        <div>
-                            <div class="player-name">${player.name}</div>
-                            <div class="player-details">
-                                <span class="college">${player.college}</span>
-                                <span class="draft-info">${player.pick} • ${player.team}</span>
-                                ${player.age ? `<span class="age-info">Age: ${player.age}</span>` : ''}
+                try {
+                    const card = document.createElement('div');
+                    card.className = player.college === 'USC' ? 'player-card usc-card' : 'player-card';
+                    
+                    const combineSection = player.combine ? `
+                        <div class="combine-metrics" data-player-name="${player.name}" onclick="showCombineModal(this.dataset.playerName)">
+                            <h5>🏃‍♂️ Athletic Testing (Click for Details)</h5>
+                            <div class="metrics-grid">
+                                ${player.combine.40yard ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine.40yard}s</span></div>` : ''}
+                                ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
+                                ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
                             </div>
-                            ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 8px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 8px;">${player.position}</div>`}
                         </div>
-                        <div class="rank-tags">
-                            <div class="overall-rank">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
-                            ${player.positionRank ? `<div class="position-tag">${player.position}${player.positionRank}</div>` : `<div class="position-tag">${player.position}</div>`}
+                    ` : '';
+                    
+                    card.innerHTML = `
+                        <div class="player-header">
+                            <div>
+                                <div class="player-name">${player.name}</div>
+                                <div class="player-details">
+                                    <span class="college">${player.college}</span>
+                                    <span class="draft-info">${player.pick} • ${player.team}</span>
+                                    ${player.age ? `<span class="age-info">Age: ${player.age}</span>` : ''}
+                                </div>
+                                ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 8px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 8px;">${player.position}</div>`}
+                            </div>
+                            <div class="rank-tags">
+                                <div class="overall-rank">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
+                                ${player.positionRank ? `<div class="position-tag">${player.position}${player.positionRank}</div>` : `<div class="position-tag">${player.position}</div>`}
+                            </div>
                         </div>
-                    </div>
-                    <div class="player-measurements">
-                        <span>${player.height}</span>
-                        <span>${player.weight}</span>
-                        ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" onclick="showCombineModal('${player.name}')">📊 ${player.combine.source}</span>` : ''}
-                    </div>
-                    ${player.combine ? `
-                    <div class="combine-metrics" onclick="showCombineModal('${player.name}')">
-                        <h5>🏃‍♂️ Athletic Testing (Click for Details)</h5>
-                        <div class="metrics-grid">
-                            ${player.combine.40yard ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine.40yard}s</span></div>` : ''}
-                            ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
-                            ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
+                        <div class="player-measurements">
+                            <span>${player.height}</span>
+                            <span>${player.weight}</span>
+                            ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" data-player-name="${player.name}" onclick="showCombineModal(this.dataset.playerName)">📊 ${player.combine.source}</span>` : ''}
                         </div>
-                    </div>
-                    ` : ''}
-                    <div class="strengths-weaknesses">
-                        <div class="strengths">
-                            <h4>✅ Strengths</h4>
-                            <ul>
-                                ${player.strengths.map(s => `<li>${s}</li>`).join('')}
-                            </ul>
+                        ${combineSection}
+                        <div class="strengths-weaknesses">
+                            <div class="strengths">
+                                <h4>✅ Strengths</h4>
+                                <ul>
+                                    ${(player.strengths || []).map(s => `<li>${s}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="weaknesses">
+                                <h4>⚠️ Weaknesses</h4>
+                                <ul>
+                                    ${(player.weaknesses || []).map(w => `<li>${w}</li>`).join('')}
+                                </ul>
+                            </div>
                         </div>
-                        <div class="weaknesses">
-                            <h4>⚠️ Weaknesses</h4>
-                            <ul>
-                                ${player.weaknesses.map(w => `<li>${w}</li>`).join('')}
-                            </ul>
+                        <div class="player-comp">
+                            <strong>🎯 Comparison:</strong> ${player.comp || 'TBD'}
                         </div>
-                    </div>
-                    <div class="player-comp">
-                        <strong>🎯 Comparison:</strong> ${player.comp}
-                    </div>
-                `;
-                
-                grid.appendChild(card);
+                    `;
+                    
+                    grid.appendChild(card);
+                } catch (error) {
+                    console.error('Error rendering player:', player.name, error);
+                }
             });
         }
 
