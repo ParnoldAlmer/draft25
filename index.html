@@ -2080,6 +2080,14 @@
             document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
         }
 
+        // Sort players by overall rank (null values go to end)
+        players.sort((a, b) => {
+            if (a.overallRank === null && b.overallRank === null) return 0;
+            if (a.overallRank === null) return 1;
+            if (b.overallRank === null) return -1;
+            return a.overallRank - b.overallRank;
+        });
+
         // Initialize
         document.getElementById('searchBox').addEventListener('input', searchPlayers);
         renderPlayers(players);
