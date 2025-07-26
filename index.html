@@ -2409,67 +2409,69 @@
             playersToRender.forEach(player => {
                 try {
                     const card = document.createElement('div');
-                    card.className = `player-card ${player.drafted ? 'drafted' : ''}`;
-                    card.innerHTML = originalPlayerCardHTML(player);
+                    // Add drafted class to player-card if player is drafted
+                    card.className = player.college === 'USC' ? 
+                        `player-card usc-card ${player.drafted ? 'drafted' : ''}` : 
+                        `player-card ${player.drafted ? 'drafted' : ''}`;
+                    
+                    const combineSection = player.combine ? `
+                        <div class="combine-metrics" data-player-name="${player.name}">
+                            <h5>🏃‍♂️ Athletic Testing (Click for Details)</h5>
+                            <div class="metrics-grid">
+                                ${player.combine['40yard'] ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine['40yard']}s</span></div>` : ''}
+                                ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
+                                ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
+                            </div>
+                        </div>
+                    ` : '';
+                    
+                    card.innerHTML = `
+                        <div class="player-header">
+                            <div>
+                                <div class="player-name">${player.name}</div>
+                                <div class="player-details">
+                                    <span class="college">${player.college}</span>
+                                    <span class="draft-info">${player.pick} • ${player.team}</span>
+                                    ${player.age ? `<span class="age-info">Age: ${player.age}</span>` : ''}
+                                </div>
+                                ${player.positionRank ? `<div class="ranking-badge position" style="margin-top: 8px;">#${player.positionRank} ${player.position}</div>` : `<div class="ranking-badge position" style="margin-top: 8px;">${player.position}</div>`}
+                            </div>
+                            <div class="rank-tags">
+                                <div class="overall-rank">${player.overallRank ? `#${player.overallRank}` : 'UDFA'}</div>
+                                ${player.positionRank ? `<div class="position-tag">${player.position}${player.positionRank}</div>` : `<div class="position-tag">${player.position}</div>`}
+                            </div>
+                        </div>
+                        <div class="player-measurements">
+                            <span>${player.height}</span>
+                            <span>${player.weight}</span>
+                            ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" data-player-name="${player.name}">📊 ${player.combine.source}</span>` : ''}
+                        </div>
+                        ${combineSection}
+                        <div class="strengths-weaknesses">
+                            <div class="strengths">
+                                <h4>✅ Strengths</h4>
+                                <ul>
+                                    ${(player.strengths || []).map(s => `<li>${s}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="weaknesses">
+                                <h4>⚠️ Weaknesses</h4>
+                                <ul>
+                                    ${(player.weaknesses || []).map(w => `<li>${w}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="player-comp">
+                            <strong>💫 NFL Comp:</strong> ${player.comp || 'TBD'}
+                        </div>
+                    `;
+                    
                     grid.appendChild(card);
                 } catch (error) {
                     console.error('Error rendering player:', player.name, error);
                 }
             });
         };
-        
-        // Store original player card HTML function
-        function originalPlayerCardHTML(player) {
-            const combineSection = player.combine && player.combine.source !== 'TBD' ? `
-                <div class="combine-metrics" data-player-name="${player.name}">
-                    ${player.combine['40yard'] ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine['40yard']}s</span></div>` : ''}
-                    ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
-                    ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
-                </div>
-            ` : '';
-            
-            return `
-                <div class="rank-badge">
-                    <span class="overall-rank">#${player.overallRank}</span>
-                    <span class="position-rank">${player.position}${player.positionRank}</span>
-                </div>
-                <div class="player-header">
-                    <h3>${player.name}</h3>
-                    <div class="player-info">
-                        <span class="position ${player.position.toLowerCase()}">${player.position}</span>
-                        <span class="college">${player.college}</span>
-                        ${player.age ? `<span class="age" style="color: var(--gold); font-weight: 600;">Age: ${player.age}</span>` : ''}
-                    </div>
-                    <div class="team-pick">
-                        <span class="team">${player.team}</span>
-                        <span class="pick">Pick ${player.pick}</span>
-                    </div>
-                    <div class="player-measurements">
-                        <span>${player.height}</span>
-                        <span>${player.weight}</span>
-                        ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" data-player-name="${player.name}">📊 ${player.combine.source}</span>` : ''}
-                    </div>
-                    ${combineSection}
-                    <div class="strengths-weaknesses">
-                        <div class="strengths">
-                            <h4>Strengths</h4>
-                            <ul>
-                                ${player.strengths.map(s => `<li>${s}</li>`).join('')}
-                            </ul>
-                        </div>
-                        <div class="weaknesses">
-                            <h4>Weaknesses</h4>
-                            <ul>
-                                ${player.weaknesses.map(w => `<li>${w}</li>`).join('')}
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="player-comp">
-                        <strong>🎯 Comparison:</strong> ${player.comp || 'TBD'}
-                    </div>
-                </div>
-            `;
-        }
         
         // Load draft state on page load
         loadDraftState();
