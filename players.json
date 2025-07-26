@@ -154,28 +154,6 @@
     "comp": "Baker Mayfield × Matthew Stafford"
   },
   {
-    "name": "Abdul Carter",
-    "position": "EDGE",
-    "college": "Penn State",
-    "team": "New York Giants",
-    "pick": "#3",
-    "height": "6'3\"",
-    "weight": "259 lbs",
-    "overallRank": 6,
-    "positionRank": 1,
-    "strengths": [
-      "Explosive edge rusher with burst",
-      "Versatile edge/LB for IDP points",
-      "Forces fumbles and tackles for loss"
-    ],
-    "weaknesses": [
-      "Raw technique, relies on athleticism",
-      "Needs to add strength vs run",
-      "Shoulder injury history"
-    ],
-    "comp": "Micah Parsons × Von Miller"
-  },
-  {
     "name": "TreVeyon Henderson",
     "position": "RB",
     "college": "Ohio State",
@@ -196,50 +174,6 @@
       "Inconsistent vision, dances too much"
     ],
     "comp": "Jahmyr Gibbs × Aaron Jones"
-  },
-  {
-    "name": "Mason Graham",
-    "position": "DT",
-    "college": "Michigan",
-    "team": "Cleveland Browns",
-    "pick": "#5",
-    "height": "6'3\"",
-    "weight": "318 lbs",
-    "overallRank": 8,
-    "positionRank": 1,
-    "strengths": [
-      "Powerful interior disruptor",
-      "Relentless motor for IDP value",
-      "Versatile alignment (3-tech or nose)"
-    ],
-    "weaknesses": [
-      "Shorter arms vs longer OL",
-      "Not elite bend, more power rusher",
-      "Injury concerns from college"
-    ],
-    "comp": "Aaron Donald × Javon Hargrave"
-  },
-  {
-    "name": "James Pearce Jr.",
-    "position": "EDGE",
-    "college": "Tennessee",
-    "team": "Atlanta Falcons",
-    "pick": "#26",
-    "height": "6'5\"",
-    "weight": "242 lbs",
-    "overallRank": 12,
-    "positionRank": 2,
-    "strengths": [
-      "Elite bend and speed rusher",
-      "Long arms for PDs and forced fumbles",
-      "Athletic upside with pursuit ability"
-    ],
-    "weaknesses": [
-      "Lean frame struggles vs run",
-      "Raw moves, relies on speed",
-      "Inconsistent motor at times"
-    ],
-    "comp": "Myles Garrett × Danielle Hunter"
   },
   {
     "name": "Quinshon Judkins",
@@ -328,94 +262,6 @@
       "Limited power between the tackles"
     ],
     "comp": "De'Von Achane × Kenneth Walker"
-  },
-  {
-    "name": "Emeka Egbuka",
-    "position": "WR",
-    "college": "Ohio State",
-    "team": "Tampa Bay Buccaneers",
-    "pick": "#19",
-    "height": "6'1\"",
-    "weight": "205 lbs",
-    "overallRank": 22,
-    "positionRank": 4,
-    "strengths": [
-      "Polished route runner with speed",
-      "Reliable target with high floor",
-      "Proven production in big games"
-    ],
-    "weaknesses": [
-      "May lack elite separation ability",
-      "Not a primary red-zone threat",
-      "Ceiling questions vs top competition"
-    ],
-    "comp": "Mike Williams × Courtland Sutton"
-  },
-  {
-    "name": "Matthew Golden",
-    "position": "WR",
-    "college": "Texas",
-    "team": "Green Bay Packers",
-    "pick": "#23",
-    "height": "6'0\"",
-    "weight": "190 lbs",
-    "overallRank": 23,
-    "positionRank": 5,
-    "strengths": [
-      "Smooth separator with deep speed",
-      "Field-stretcher with big-play ability",
-      "Clean route running technique"
-    ],
-    "weaknesses": [
-      "Smaller frame may limit physicality",
-      "Inconsistent hands on contested catches",
-      "Limited after-catch creation"
-    ],
-    "comp": "Brandin Cooks × DK Metcalf"
-  },
-  {
-    "name": "Jayden Higgins",
-    "position": "WR",
-    "college": "Iowa State",
-    "team": "Houston Texans",
-    "pick": "#34",
-    "height": "6'4\"",
-    "weight": "215 lbs",
-    "overallRank": 24,
-    "positionRank": 6,
-    "strengths": [
-      "Physical outside receiver",
-      "Strong hands and red-zone threat",
-      "Contested catch specialist"
-    ],
-    "weaknesses": [
-      "Limited separation vs press coverage",
-      "Route running needs refinement",
-      "Speed limitations on vertical routes"
-    ],
-    "comp": "Michael Pittman Jr. × Kenny Golladay"
-  },
-  {
-    "name": "Tre Harris",
-    "position": "WR",
-    "college": "Ole Miss",
-    "team": "Washington Commanders",
-    "pick": "#50",
-    "height": "6'2\"",
-    "weight": "205 lbs",
-    "overallRank": 25,
-    "positionRank": 7,
-    "strengths": [
-      "Contested catch specialist",
-      "Deep-ball winner with body control",
-      "Red-zone threat with length"
-    ],
-    "weaknesses": [
-      "Injury history concerns",
-      "Limited YAC ability",
-      "Route tree needs expansion"
-    ],
-    "comp": "Calvin Ridley × Jerry Jeudy"
   },
   {
     "name": "Jihaad Campbell",
@@ -1824,5 +1670,445 @@
       "Depth role initially behind Sanders"
     ],
     "comp": "Cole Kmet × Dawson Knox"
+  },
+  {
+    "name": "Abdul Carter",
+    "position": "EDGE",
+    "college": "Penn State",
+    "team": "New York Giants",
+    "pick": "#3",
+    "height": "6'3\"",
+    "weight": "252 lbs",
+    "overallRank": 52,
+    "positionRank": 1,
+    "strengths": [
+      "Explosive burst/bend; high pass-rush win rate (20%+)",
+      "Versatile EDGE/LB for sacks/TFLs",
+      "Elite athletic testing and pursuit motor for IDP points"
+    ],
+    "weaknesses": [
+      "Raw technique; needs strength vs. run",
+      "Shoulder injury history",
+      "Limited experience as pure pass rusher"
+    ],
+    "comp": "Micah Parsons × Von Miller"
+  },
+  {
+    "name": "James Pearce Jr.",
+    "position": "EDGE",
+    "college": "Tennessee",
+    "team": "Atlanta Falcons",
+    "pick": "#26",
+    "height": "6'5\"",
+    "weight": "243 lbs",
+    "overallRank": 53,
+    "positionRank": 2,
+    "strengths": [
+      "Elite bend/speed (4.5 40); disruptive (15 sacks in 2024)",
+      "Pursuit motor for IDP points",
+      "Long arms for pass deflections and forced fumbles"
+    ],
+    "weaknesses": [
+      "Lean frame; struggles setting edge",
+      "Inconsistent motor at times",
+      "Needs to add strength for NFL level"
+    ],
+    "comp": "Myles Garrett × Danielle Hunter"
+  },
+  {
+    "name": "Mykel Williams",
+    "position": "EDGE",
+    "college": "Georgia",
+    "team": "San Francisco 49ers",
+    "pick": "#11",
+    "height": "6'5\"",
+    "weight": "265 lbs",
+    "overallRank": 54,
+    "positionRank": 3,
+    "strengths": [
+      "Power/speed combo; versatile DL/EDGE",
+      "Strong vs. run (3.5 stuffs pts)",
+      "High ceiling with elite frame and athleticism"
+    ],
+    "weaknesses": [
+      "Raw hand usage; needs counters",
+      "Injury-limited 2024 tape",
+      "Needs to develop pass-rush plan"
+    ],
+    "comp": "Will Anderson Jr. × Chase Young"
+  },
+  {
+    "name": "Shemar Stewart",
+    "position": "EDGE",
+    "college": "Texas A&M",
+    "team": "Cincinnati Bengals",
+    "pick": "#17",
+    "height": "6'6\"",
+    "weight": "290 lbs",
+    "overallRank": 55,
+    "positionRank": 4,
+    "strengths": [
+      "Long arms (35\"); power rusher",
+      "Sets edge well for TFLs/FFs (5 pts)",
+      "Massive frame with NFL-ready size"
+    ],
+    "weaknesses": [
+      "Limited bend; straight-line athlete",
+      "Needs pass-rush plan beyond power",
+      "Can be stiff in coverage when dropping"
+    ],
+    "comp": "Travon Walker × Aidan Hutchinson"
+  },
+  {
+    "name": "Nic Scourton",
+    "position": "EDGE",
+    "college": "Texas A&M",
+    "team": "New York Jets",
+    "pick": "#37",
+    "height": "6'4\"",
+    "weight": "285 lbs",
+    "overallRank": 56,
+    "positionRank": 5,
+    "strengths": [
+      "Bull-rush specialist; high motor (10 sacks 2024)",
+      "Run defender for stuffs",
+      "Relentless effort and work ethic"
+    ],
+    "weaknesses": [
+      "Lacks elite burst; average bend",
+      "Developmental pass moves",
+      "Limited athletic upside"
+    ],
+    "comp": "Josh Allen (JAX) × Montez Sweat"
+  },
+  {
+    "name": "Derrick Moore",
+    "position": "EDGE",
+    "college": "Michigan",
+    "team": "Buffalo Bills",
+    "pick": "#63",
+    "height": "6'6\"",
+    "weight": "270 lbs",
+    "overallRank": 57,
+    "positionRank": 6,
+    "strengths": [
+      "Physical edge-setter; strong hands",
+      "Consistent pressure for sacks",
+      "Reliable against the run"
+    ],
+    "weaknesses": [
+      "Limited speed (4.8 40); not explosive",
+      "Ceiling as rotational player",
+      "Needs to develop counter moves"
+    ],
+    "comp": "Brian Burns × Khalil Mack"
+  },
+  {
+    "name": "Landon Jackson",
+    "position": "EDGE",
+    "college": "Arkansas",
+    "team": "Green Bay Packers",
+    "pick": "#88",
+    "height": "6'7\"",
+    "weight": "285 lbs",
+    "overallRank": 58,
+    "positionRank": 7,
+    "strengths": [
+      "Tall/lengthy (6'7\"); bend around edge",
+      "Upside in pass rush with length",
+      "Disruptive when healthy"
+    ],
+    "weaknesses": [
+      "Lean build; struggles vs. power",
+      "Raw technique needs development",
+      "Injury concerns from college"
+    ],
+    "comp": "Gregory Rousseau × Kayvon Thibodeaux"
+  },
+  {
+    "name": "Ashton Gillotte",
+    "position": "EDGE",
+    "college": "Louisville",
+    "team": "Detroit Lions",
+    "pick": "#73",
+    "height": "6'3\"",
+    "weight": "275 lbs",
+    "overallRank": 59,
+    "positionRank": 8,
+    "strengths": [
+      "Quick first step; interior rush versatility",
+      "High sack potential from multiple alignments",
+      "Disruptive pass rusher with good motor"
+    ],
+    "weaknesses": [
+      "Undersized (6'3\", 275); gets washed in run game",
+      "Limited against bigger tackles",
+      "Needs to add strength"
+    ],
+    "comp": "Aaron Donald (style) × Chris Jones"
+  },
+  {
+    "name": "Princely Umanmielen",
+    "position": "EDGE",
+    "college": "Ole Miss",
+    "team": "Minnesota Vikings",
+    "pick": "#86",
+    "height": "6'5\"",
+    "weight": "250 lbs",
+    "overallRank": 60,
+    "positionRank": 9,
+    "strengths": [
+      "Athletic twitch; speed-to-power",
+      "Flashes elite traits when healthy",
+      "High upside for dynasty leagues"
+    ],
+    "weaknesses": [
+      "Inconsistent production; needs polish",
+      "Injury concerns throughout college",
+      "Raw technique limits consistency"
+    ],
+    "comp": "Jermaine Johnson × Odafe Oweh"
+  },
+  {
+    "name": "Jack Sawyer",
+    "position": "EDGE",
+    "college": "Ohio State",
+    "team": "Philadelphia Eagles",
+    "pick": "#113",
+    "height": "6'5\"",
+    "weight": "260 lbs",
+    "overallRank": 61,
+    "positionRank": 10,
+    "strengths": [
+      "High-effort rusher; strong hands",
+      "Reliable vs. run with consistent motor",
+      "High character and work ethic"
+    ],
+    "weaknesses": [
+      "Limited athleticism; average bend",
+      "Rotational ceiling at NFL level",
+      "Lacks elite pass-rush moves"
+    ],
+    "comp": "Maxx Crosby × Joey Bosa"
+  },
+  {
+    "name": "Mason Graham",
+    "position": "DT",
+    "college": "Michigan",
+    "team": "Cleveland Browns",
+    "pick": "#5",
+    "height": "6'3\"",
+    "weight": "318 lbs",
+    "overallRank": 62,
+    "positionRank": 1,
+    "strengths": [
+      "Powerful leverage; disrupts interior (sacks/TFLs)",
+      "Run-stopper for stuffs with elite motor",
+      "High-end interior pass rusher"
+    ],
+    "weaknesses": [
+      "Shorter arms; limited bend",
+      "Injury history from college",
+      "Needs to add pass-rush counters"
+    ],
+    "comp": "Aaron Donald × Javon Hargrave"
+  },
+  {
+    "name": "Kenneth Grant",
+    "position": "DT",
+    "college": "Michigan",
+    "team": "Miami Dolphins",
+    "pick": "#13",
+    "height": "6'3\"",
+    "weight": "339 lbs",
+    "overallRank": 63,
+    "positionRank": 2,
+    "strengths": [
+      "Massive anchor (6'3\", 339); absorbs doubles",
+      "Pocket pusher with rare size",
+      "Elite run defender and space eater"
+    ],
+    "weaknesses": [
+      "Limited pass-rush (3 sacks career); average burst",
+      "Conditioning questions at NFL level",
+      "Limited athletic upside"
+    ],
+    "comp": "Quinnen Williams × Vita Vea"
+  },
+  {
+    "name": "Walter Nolen",
+    "position": "DT",
+    "college": "Ole Miss",
+    "team": "Arizona Cardinals",
+    "pick": "#16",
+    "height": "6'3\"",
+    "weight": "305 lbs",
+    "overallRank": 64,
+    "positionRank": 3,
+    "strengths": [
+      "Explosive first step; versatile 3-tech",
+      "High motor for TFLs and interior pressure",
+      "Good athlete with pass-rush upside"
+    ],
+    "weaknesses": [
+      "Raw hand usage; inconsistent leverage",
+      "Needs polish in technique",
+      "Can be inconsistent game to game"
+    ],
+    "comp": "Jeffery Simmons × Christian Wilkins"
+  },
+  {
+    "name": "Tyleik Williams",
+    "position": "DT",
+    "college": "Ohio State",
+    "team": "Detroit Lions",
+    "pick": "#28",
+    "height": "6'3\"",
+    "weight": "330 lbs",
+    "overallRank": 65,
+    "positionRank": 4,
+    "strengths": [
+      "Strong bull-rush; clogs lanes",
+      "Sack potential in gaps with power",
+      "Solid run defender with good size"
+    ],
+    "weaknesses": [
+      "Limited athleticism; straight-line mover",
+      "Injury-prone throughout college",
+      "Needs to improve hand usage"
+    ],
+    "comp": "Kenny Clark × Grover Stewart"
+  },
+  {
+    "name": "Derrick Harmon",
+    "position": "DT",
+    "college": "Oregon",
+    "team": "Pittsburgh Steelers",
+    "pick": "#21",
+    "height": "6'5\"",
+    "weight": "310 lbs",
+    "overallRank": 66,
+    "positionRank": 5,
+    "strengths": [
+      "Quick off snap; active hands",
+      "Disrupts plays for FF (5 pts)",
+      "Good length and leverage"
+    ],
+    "weaknesses": [
+      "Undersized (6'5\", 310); gets moved in run",
+      "Stamina issues in long drives",
+      "Needs to add strength"
+    ],
+    "comp": "Calais Campbell × Sheldon Rankins"
+  },
+  {
+    "name": "Deone Walker",
+    "position": "DT",
+    "college": "Kentucky",
+    "team": "Chicago Bears",
+    "pick": "#39",
+    "height": "6'6\"",
+    "weight": "345 lbs",
+    "overallRank": 67,
+    "positionRank": 6,
+    "strengths": [
+      "Giant frame (6'6\", 345); space-eater",
+      "Anchors vs. double-teams with rare size",
+      "Massive run defender"
+    ],
+    "weaknesses": [
+      "Limited pass-rush; slow first step",
+      "Conditioning concerns with size",
+      "Limited athletic ceiling"
+    ],
+    "comp": "Dexter Lawrence × A'Shawn Robinson"
+  },
+  {
+    "name": "T.J. Sanders",
+    "position": "DT",
+    "college": "South Carolina",
+    "team": "New Orleans Saints",
+    "pick": "#73",
+    "height": "6'4\"",
+    "weight": "290 lbs",
+    "overallRank": 68,
+    "positionRank": 7,
+    "strengths": [
+      "Twitchy interior rusher; quick swim moves",
+      "Upside for sacks from interior",
+      "Good athlete for position"
+    ],
+    "weaknesses": [
+      "Lean build; struggles vs. power",
+      "Raw technique needs development",
+      "Can be inconsistent"
+    ],
+    "comp": "Ed Oliver × Javon Kinlaw"
+  },
+  {
+    "name": "Mason Pline",
+    "position": "DT",
+    "college": "Ferris State",
+    "team": "Washington Commanders",
+    "pick": "#100",
+    "height": "6'3\"",
+    "weight": "308 lbs",
+    "overallRank": 69,
+    "positionRank": 8,
+    "strengths": [
+      "Powerful bull-rusher; high effort",
+      "Small-school dominator with production",
+      "Good motor and work ethic"
+    ],
+    "weaknesses": [
+      "Level of competition questions",
+      "Needs refinement in technique",
+      "Limited athletic testing"
+    ],
+    "comp": "Grady Jarrett × Larry Ogunjobi"
+  },
+  {
+    "name": "Josiah Stewart",
+    "position": "DT",
+    "college": "Michigan",
+    "team": "Buffalo Bills",
+    "pick": "#128",
+    "height": "6'3\"",
+    "weight": "290 lbs",
+    "overallRank": 70,
+    "positionRank": 9,
+    "strengths": [
+      "Explosive gap shooter; active hands",
+      "TFL specialist with good first step",
+      "High motor and effort"
+    ],
+    "weaknesses": [
+      "Undersized; gets engulfed by OL",
+      "Limited ceiling at NFL level",
+      "Needs to add strength"
+    ],
+    "comp": "Shaka Toney × BJ Ojulari"
+  },
+  {
+    "name": "Brandon Dorlus",
+    "position": "DT",
+    "college": "Oregon",
+    "team": "Atlanta Falcons",
+    "pick": "#109",
+    "height": "6'3\"",
+    "weight": "285 lbs",
+    "overallRank": 71,
+    "positionRank": 10,
+    "strengths": [
+      "Versatile DL; quick first step",
+      "Disrupts with length and reach",
+      "Can play multiple positions"
+    ],
+    "weaknesses": [
+      "Inconsistent motor; average production",
+      "Scheme fit issues",
+      "Needs to develop pass-rush moves"
+    ],
+    "comp": "DeForest Buckner × Cameron Jordan"
   }
 ]
