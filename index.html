@@ -717,6 +717,257 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
+        
+        .draft-board-btn {
+            position: absolute;
+            top: 20px;
+            right: 150px;
+            background: var(--green);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .draft-board-btn:hover {
+            background: #2c8e2c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        /* Draft Board Styles */
+        .draft-board-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1001;
+            overflow-y: auto;
+        }
+        
+        .draft-board-container {
+            background: var(--surface);
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .draft-board-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .draft-board-title {
+            font-size: 2em;
+            color: var(--gold);
+        }
+        
+        .draft-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .round-selector {
+            background: var(--background);
+            color: var(--text);
+            border: 1px solid var(--highlight);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        
+        .draft-board-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2em;
+            cursor: pointer;
+            color: var(--text);
+        }
+        
+        .draft-grid {
+            display: grid;
+            grid-template-columns: 120px repeat(12, 1fr);
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .draft-cell {
+            background: var(--background);
+            border: 1px solid #333;
+            padding: 10px;
+            min-height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85em;
+            transition: all 0.3s;
+        }
+        
+        .draft-cell.team-header {
+            background: var(--highlight);
+            color: white;
+            font-weight: 600;
+            font-size: 0.75em;
+            text-align: center;
+        }
+        
+        .draft-cell.round-header {
+            background: var(--gold);
+            color: var(--background);
+            font-weight: 700;
+        }
+        
+        .draft-cell.current-pick {
+            border: 3px solid var(--green);
+            background: rgba(52, 211, 153, 0.1);
+            box-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
+        }
+        
+        .draft-cell.drafted {
+            background: var(--surface);
+        }
+        
+        .picked-player {
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 2px;
+        }
+        
+        .pick-position {
+            font-size: 0.7em;
+            color: #666;
+        }
+        
+        .player-selector {
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .player-search {
+            width: 100%;
+            padding: 8px;
+            background: var(--background);
+            border: 1px solid var(--highlight);
+            color: var(--text);
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .autocomplete-results {
+            position: absolute;
+            background: var(--surface);
+            border: 1px solid var(--highlight);
+            border-radius: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+            width: 100%;
+            z-index: 1002;
+            display: none;
+        }
+        
+        .autocomplete-item {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #333;
+        }
+        
+        .autocomplete-item:hover {
+            background: var(--highlight);
+            color: white;
+        }
+        
+        .draft-button {
+            background: var(--green);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85em;
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .draft-button:hover {
+            background: #2c8e2c;
+        }
+        
+        .draft-recap {
+            background: var(--background);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .draft-recap h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+        
+        .recent-picks {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .recent-pick {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: var(--surface);
+            border-radius: 5px;
+        }
+        
+        .undo-button {
+            background: var(--red);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        
+        .undo-button:hover {
+            background: #a00;
+        }
+        
+        /* Drafted player styling */
+        .player-card.drafted {
+            opacity: 0.5;
+            position: relative;
+        }
+        
+        .player-card.drafted::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--red);
+            transform: rotate(-5deg);
+        }
+        
+        .player-card.drafted .player-header h3 {
+            text-decoration: line-through;
+            color: #666;
+        }
 
         .changelog-content {
             max-width: 900px;
@@ -1053,6 +1304,7 @@
             <h1>2025 Champions League Dynasty Draft</h1>
             <div class="subtitle">Champions League Dynasty - July 26, 2025 at 7:45 PM PST</div>
             <button class="changelog-btn" onclick="showChangelog()">📋 What's New</button>
+            <button class="draft-board-btn" onclick="toggleDraftBoard()">📊 Draft Board</button>
             <div class="countdown-container">
                 <div class="countdown-label">Draft Starts In:</div>
                 <div class="countdown" id="countdown">
@@ -1134,6 +1386,37 @@
             </div>
         </div>
     </div>
+    
+    <!-- Draft Board Modal -->
+    <div class="draft-board-overlay" id="draftBoardOverlay">
+        <div class="draft-board-container">
+            <span class="draft-board-close" onclick="toggleDraftBoard()">&times;</span>
+            <div class="draft-board-header">
+                <h2 class="draft-board-title">2025 Champions League Draft Board</h2>
+                <div class="draft-controls">
+                    <label>Rounds: </label>
+                    <select class="round-selector" id="roundSelector" onchange="updateDraftBoard()">
+                        <option value="5">5 Rounds</option>
+                        <option value="8">8 Rounds</option>
+                        <option value="10">10 Rounds</option>
+                        <option value="12">12 Rounds</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="draft-grid" id="draftGrid">
+                <!-- Draft grid will be populated by JavaScript -->
+            </div>
+            
+            <div class="draft-recap">
+                <h3>Recent Picks</h3>
+                <div class="recent-picks" id="recentPicks">
+                    <!-- Recent picks will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="modal" id="combineModal">
         <div class="modal-content combine-modal-content">
             <span class="close-modal" onclick="closeCombineModal()">&times;</span>
@@ -1830,6 +2113,366 @@
         // Start countdown
         updateCountdown();
         setInterval(updateCountdown, 1000);
+        
+        // Draft Board Functionality
+        const draftOrder = [
+            { pos: 1, team: "Philly Special", manager: "Joseph DeLuca" },
+            { pos: 2, team: "Easton's And Aubree's Crew", manager: "Ben Linn" },
+            { pos: 3, team: "Nilt's Brigade", manager: "Nilton Salinas" },
+            { pos: 4, team: "Uncle Rico", manager: "Ricardo Martinez" },
+            { pos: 5, team: "Exiled Mercenaries", manager: "Jeff Weber" },
+            { pos: 6, team: "Love Potion Number Ten", manager: "Karl Krum" },
+            { pos: 7, team: "Tua Infinity n De'Von!", manager: "Richard Faircourt" },
+            { pos: 8, team: "Zer0Dark", manager: "Zero Dark" },
+            { pos: 9, team: "1.21 TJ WATTS", manager: "Phillip Brown" },
+            { pos: 10, team: "The Bowman Legacy", manager: "Ryan Arbues" },
+            { pos: 11, team: "The Kingdom", manager: "RJ Del Mar" },
+            { pos: 12, team: "Manila Thrilla", manager: "Conrad Brown" }
+        ];
+        
+        let draftState = {
+            currentRound: 1,
+            currentPick: 1,
+            totalRounds: 5,
+            picks: [], // Array of {round, pick, team, player}
+            draftBoard: {} // Key: "round-pick", Value: {team, player}
+        };
+        
+        // Load draft state from localStorage
+        function loadDraftState() {
+            const saved = localStorage.getItem('draftState');
+            if (saved) {
+                draftState = JSON.parse(saved);
+            }
+            const savedDrafted = localStorage.getItem('draftedPlayers');
+            if (savedDrafted) {
+                const draftedPlayers = JSON.parse(savedDrafted);
+                // Update players array with drafted status
+                players.forEach(player => {
+                    if (draftedPlayers.includes(player.name)) {
+                        player.drafted = true;
+                    }
+                });
+            }
+        }
+        
+        // Save draft state to localStorage
+        function saveDraftState() {
+            localStorage.setItem('draftState', JSON.stringify(draftState));
+            const draftedPlayers = draftState.picks.map(pick => pick.player);
+            localStorage.setItem('draftedPlayers', JSON.stringify(draftedPlayers));
+        }
+        
+        // Toggle draft board visibility
+        function toggleDraftBoard() {
+            const overlay = document.getElementById('draftBoardOverlay');
+            if (overlay.style.display === 'block') {
+                overlay.style.display = 'none';
+            } else {
+                overlay.style.display = 'block';
+                updateDraftBoard();
+            }
+        }
+        
+        // Get team for specific round and pick (serpentine)
+        function getTeamForPick(round, pick) {
+            const isEvenRound = round % 2 === 0;
+            const teamIndex = isEvenRound ? 12 - pick : pick - 1;
+            return draftOrder[teamIndex];
+        }
+        
+        // Update draft board display
+        function updateDraftBoard() {
+            const grid = document.getElementById('draftGrid');
+            const roundSelector = document.getElementById('roundSelector');
+            draftState.totalRounds = parseInt(roundSelector.value);
+            
+            grid.innerHTML = '';
+            
+            // Add header row
+            const cornerCell = document.createElement('div');
+            cornerCell.className = 'draft-cell';
+            grid.appendChild(cornerCell);
+            
+            // Team headers
+            draftOrder.forEach(team => {
+                const headerCell = document.createElement('div');
+                headerCell.className = 'draft-cell team-header';
+                headerCell.innerHTML = `${team.team}<br><small>${team.manager}</small>`;
+                grid.appendChild(headerCell);
+            });
+            
+            // Add rounds
+            for (let round = 1; round <= draftState.totalRounds; round++) {
+                // Round header
+                const roundHeader = document.createElement('div');
+                roundHeader.className = 'draft-cell round-header';
+                roundHeader.textContent = `Round ${round}`;
+                grid.appendChild(roundHeader);
+                
+                // Add picks for this round
+                for (let pick = 1; pick <= 12; pick++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'draft-cell';
+                    
+                    const team = getTeamForPick(round, pick);
+                    const key = `${round}-${pick}`;
+                    const draftedPick = draftState.draftBoard[key];
+                    
+                    if (draftedPick) {
+                        cell.classList.add('drafted');
+                        cell.innerHTML = `
+                            <div class="picked-player">${draftedPick.player}</div>
+                            <div class="pick-position">Pick ${(round - 1) * 12 + pick}</div>
+                        `;
+                    } else if (round === draftState.currentRound && pick === draftState.currentPick) {
+                        cell.classList.add('current-pick');
+                        cell.innerHTML = `
+                            <div class="player-selector">
+                                <input type="text" class="player-search" 
+                                       placeholder="Search player..." 
+                                       id="playerSearch-${key}"
+                                       onkeyup="handlePlayerSearch('${key}')"
+                                       onfocus="showAutocomplete('${key}')"
+                                       onblur="hideAutocomplete('${key}')">
+                                <div class="autocomplete-results" id="autocomplete-${key}"></div>
+                                <button class="draft-button" onclick="draftPlayer('${key}')">
+                                    Draft Player
+                                </button>
+                            </div>
+                        `;
+                        // Show the selector
+                        setTimeout(() => {
+                            const selector = cell.querySelector('.player-selector');
+                            if (selector) selector.style.display = 'block';
+                        }, 100);
+                    } else {
+                        cell.innerHTML = `<div class="pick-position">Pick ${(round - 1) * 12 + pick}</div>`;
+                    }
+                    
+                    grid.appendChild(cell);
+                }
+            }
+            
+            updateRecentPicks();
+        }
+        
+        // Handle player search
+        function handlePlayerSearch(key) {
+            const input = document.getElementById(`playerSearch-${key}`);
+            const resultsDiv = document.getElementById(`autocomplete-${key}`);
+            const searchTerm = input.value.toLowerCase();
+            
+            if (searchTerm.length < 2) {
+                resultsDiv.style.display = 'none';
+                return;
+            }
+            
+            const matches = players.filter(player => 
+                !player.drafted && 
+                (player.name.toLowerCase().includes(searchTerm) ||
+                 player.position.toLowerCase().includes(searchTerm) ||
+                 player.college.toLowerCase().includes(searchTerm))
+            ).slice(0, 10);
+            
+            resultsDiv.innerHTML = matches.map(player => 
+                `<div class="autocomplete-item" onclick="selectPlayer('${key}', '${player.name}')">
+                    ${player.name} - ${player.position} (${player.college})
+                </div>`
+            ).join('');
+            
+            resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+        }
+        
+        function showAutocomplete(key) {
+            setTimeout(() => {
+                const resultsDiv = document.getElementById(`autocomplete-${key}`);
+                if (resultsDiv && resultsDiv.innerHTML) {
+                    resultsDiv.style.display = 'block';
+                }
+            }, 100);
+        }
+        
+        function hideAutocomplete(key) {
+            setTimeout(() => {
+                const resultsDiv = document.getElementById(`autocomplete-${key}`);
+                if (resultsDiv) {
+                    resultsDiv.style.display = 'none';
+                }
+            }, 200);
+        }
+        
+        // Select player from autocomplete
+        function selectPlayer(key, playerName) {
+            const input = document.getElementById(`playerSearch-${key}`);
+            input.value = playerName;
+            const resultsDiv = document.getElementById(`autocomplete-${key}`);
+            resultsDiv.style.display = 'none';
+        }
+        
+        // Draft a player
+        function draftPlayer(key) {
+            const input = document.getElementById(`playerSearch-${key}`);
+            const playerName = input.value.trim();
+            
+            if (!playerName) {
+                alert('Please enter a player name');
+                return;
+            }
+            
+            const [round, pick] = key.split('-').map(Number);
+            const team = getTeamForPick(round, pick);
+            
+            // Add to draft state
+            const pickData = {
+                round,
+                pick,
+                team: team.team,
+                player: playerName,
+                timestamp: new Date().toISOString()
+            };
+            
+            draftState.picks.push(pickData);
+            draftState.draftBoard[key] = pickData;
+            
+            // Mark player as drafted
+            const player = players.find(p => p.name === playerName);
+            if (player) {
+                player.drafted = true;
+            }
+            
+            // Advance to next pick
+            draftState.currentPick++;
+            if (draftState.currentPick > 12) {
+                draftState.currentPick = 1;
+                draftState.currentRound++;
+            }
+            
+            // Save state
+            saveDraftState();
+            
+            // Update displays
+            updateDraftBoard();
+            renderPlayers(currentFilter === 'all' ? players : 
+                players.filter(p => currentFilter === 'USC' ? p.college === 'USC' : p.position.includes(currentFilter)));
+        }
+        
+        // Update recent picks display
+        function updateRecentPicks() {
+            const recentPicksDiv = document.getElementById('recentPicks');
+            const recentPicks = draftState.picks.slice(-5).reverse();
+            
+            recentPicksDiv.innerHTML = recentPicks.map((pick, index) => `
+                <div class="recent-pick">
+                    <div>
+                        <strong>Round ${pick.round}, Pick ${pick.pick}</strong><br>
+                        ${pick.team}: ${pick.player}
+                    </div>
+                    ${index === 0 ? `<button class="undo-button" onclick="undoLastPick()">Undo</button>` : ''}
+                </div>
+            `).join('');
+        }
+        
+        // Undo last pick (commissioner function)
+        function undoLastPick() {
+            if (draftState.picks.length === 0) return;
+            
+            const lastPick = draftState.picks.pop();
+            const key = `${lastPick.round}-${lastPick.pick}`;
+            delete draftState.draftBoard[key];
+            
+            // Unmark player as drafted
+            const player = players.find(p => p.name === lastPick.player);
+            if (player) {
+                player.drafted = false;
+            }
+            
+            // Go back to previous pick
+            draftState.currentRound = lastPick.round;
+            draftState.currentPick = lastPick.pick;
+            
+            // Save state
+            saveDraftState();
+            
+            // Update displays
+            updateDraftBoard();
+            renderPlayers(currentFilter === 'all' ? players : 
+                players.filter(p => currentFilter === 'USC' ? p.college === 'USC' : p.position.includes(currentFilter)));
+        }
+        
+        // Update player card rendering to show drafted status
+        const originalRenderPlayers = renderPlayers;
+        renderPlayers = function(playersToRender) {
+            const grid = document.getElementById('playersGrid');
+            grid.innerHTML = '';
+            
+            playersToRender.forEach(player => {
+                try {
+                    const card = document.createElement('div');
+                    card.className = `player-card ${player.drafted ? 'drafted' : ''}`;
+                    card.innerHTML = originalPlayerCardHTML(player);
+                    grid.appendChild(card);
+                } catch (error) {
+                    console.error('Error rendering player:', player.name, error);
+                }
+            });
+        };
+        
+        // Store original player card HTML function
+        function originalPlayerCardHTML(player) {
+            const combineSection = player.combine && player.combine.source !== 'TBD' ? `
+                <div class="combine-metrics" data-player-name="${player.name}">
+                    ${player.combine['40yard'] ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine['40yard']}s</span></div>` : ''}
+                    ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
+                    ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
+                </div>
+            ` : '';
+            
+            return `
+                <div class="rank-badge">
+                    <span class="overall-rank">#${player.overallRank}</span>
+                    <span class="position-rank">${player.position}${player.positionRank}</span>
+                </div>
+                <div class="player-header">
+                    <h3>${player.name}</h3>
+                    <div class="player-info">
+                        <span class="position ${player.position.toLowerCase()}">${player.position}</span>
+                        <span class="college">${player.college}</span>
+                        ${player.age ? `<span class="age" style="color: var(--gold); font-weight: 600;">Age: ${player.age}</span>` : ''}
+                    </div>
+                    <div class="team-pick">
+                        <span class="team">${player.team}</span>
+                        <span class="pick">Pick ${player.pick}</span>
+                    </div>
+                    <div class="player-measurements">
+                        <span>${player.height}</span>
+                        <span>${player.weight}</span>
+                        ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data" data-player-name="${player.name}">📊 ${player.combine.source}</span>` : ''}
+                    </div>
+                    ${combineSection}
+                    <div class="strengths-weaknesses">
+                        <div class="strengths">
+                            <h4>Strengths</h4>
+                            <ul>
+                                ${player.strengths.map(s => `<li>${s}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="weaknesses">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                ${player.weaknesses.map(w => `<li>${w}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="player-comp">
+                        <strong>🎯 Comparison:</strong> ${player.comp || 'TBD'}
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Load draft state on page load
+        loadDraftState();
     </script>
     
     <footer style="text-align: center; padding: 20px; font-size: 0.9em; color: #666; border-top: 1px solid #333; margin-top: 40px;">
