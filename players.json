@@ -220,28 +220,6 @@
     "comp": "Aaron Donald × Javon Hargrave"
   },
   {
-    "name": "Colston Loveland",
-    "position": "TE",
-    "college": "Michigan",
-    "team": "Chicago Bears",
-    "pick": "#10",
-    "height": "6'5\"",
-    "weight": "245 lbs",
-    "overallRank": 10,
-    "positionRank": 1,
-    "strengths": [
-      "Mismatch TE with size and routes",
-      "Reliable hands and YAC ability",
-      "Inline blocker adds scheme value"
-    ],
-    "weaknesses": [
-      "Not elite speed for vertical stretch",
-      "Blocking technique needs work",
-      "Route tree limited to slot"
-    ],
-    "comp": "Sam LaPorta × George Kittle"
-  },
-  {
     "name": "James Pearce Jr.",
     "position": "EDGE",
     "college": "Tennessee",
@@ -1626,5 +1604,225 @@
       "Size long but lean"
     ],
     "comp": "Patrick Queen × Trenton Simpson"
+  },
+  {
+    "name": "Colston Loveland",
+    "position": "TE",
+    "college": "Michigan",
+    "team": "Chicago Bears",
+    "pick": "#10",
+    "height": "6'5\"",
+    "weight": "245 lbs",
+    "overallRank": 10,
+    "positionRank": 1,
+    "strengths": [
+      "Mismatch TE with size and routes; red-zone threat for RETD points",
+      "Reliable hands and after-catch; PPR-friendly with YAC",
+      "Inline blocker; adds value in run-heavy schemes"
+    ],
+    "weaknesses": [
+      "Not elite speed; limited vertical stretch",
+      "Blocking technique raw; needs strength gains",
+      "Route tree limited; more slot than diverse"
+    ],
+    "comp": "Sam LaPorta × George Kittle"
+  },
+  {
+    "name": "Tyler Warren",
+    "position": "TE",
+    "college": "Penn State",
+    "team": "Indianapolis Colts",
+    "pick": "#14",
+    "height": "6'6\"",
+    "weight": "261 lbs",
+    "overallRank": 11,
+    "positionRank": 2,
+    "strengths": [
+      "Massive frame with athleticism; dominates contested catches",
+      "Versatile blocker/receiver; three-down potential in PPR",
+      "High football IQ; adjusts to throws with body control"
+    ],
+    "weaknesses": [
+      "Limited speed; not a deep threat",
+      "Needs to refine route-running for separation",
+      "Injury history from college wear"
+    ],
+    "comp": "Dallas Goedert × Mike Gesicki"
+  },
+  {
+    "name": "Mason Taylor",
+    "position": "TE",
+    "college": "LSU",
+    "team": "New York Jets",
+    "pick": "#42",
+    "height": "6'6\"",
+    "weight": "245 lbs",
+    "overallRank": 39,
+    "positionRank": 3,
+    "strengths": [
+      "Solid athleticism (4.68 40, 83rd percentile 3-cone); fluid mover",
+      "Reliable target; fits as security blanket for Aaron Rodgers",
+      "Upside in red zone with size and hands"
+    ],
+    "weaknesses": [
+      "Low yards per route run (63rd max); inefficient receiver",
+      "Limited YAC (5.4 avg); not explosive after catch",
+      "Only 14 missed tackles forced; lacks power"
+    ],
+    "comp": "Dalton Kincaid × Kyle Pitts"
+  },
+  {
+    "name": "Elijah Arroyo",
+    "position": "TE",
+    "college": "Miami (FL)",
+    "team": "Seattle Seahawks",
+    "pick": "#55",
+    "height": "6'4\"",
+    "weight": "240 lbs",
+    "overallRank": 43,
+    "positionRank": 4,
+    "strengths": [
+      "Athletic mismatch weapon; pushes for snaps over Noah Fant",
+      "High yards per route run (23rd); efficient target",
+      "Strong YAC per reception (2nd); elusive after catch"
+    ],
+    "weaknesses": [
+      "Blocking ability questionable; may limit snaps",
+      "Competition with Fant delays role until 2026",
+      "Dependent on Kupp's decline for targets"
+    ],
+    "comp": "David Njoku × Evan Engram"
+  },
+  {
+    "name": "Terrance Ferguson",
+    "position": "TE",
+    "college": "Oregon",
+    "team": "Los Angeles Rams",
+    "pick": "#62",
+    "height": "6'5\"",
+    "weight": "255 lbs",
+    "overallRank": 44,
+    "positionRank": 5,
+    "strengths": [
+      "High-end athleticism (9.32 RAS, 4.63 40); explosive tester",
+      "Top yards per route run (14th), YAC/rec (3rd); playmaker",
+      "Heir to Higbee; potential starter by 2026"
+    ],
+    "weaknesses": [
+      "Limited rookie snaps; gets feet wet in 2025",
+      "Needs to prove blocking for three-down role",
+      "Missed tackles forced (22nd); average elusiveness"
+    ],
+    "comp": "Greg Dulcich × Pat Freiermuth"
+  },
+  {
+    "name": "Harold Fannin Jr.",
+    "position": "TE",
+    "college": "Bowling Green",
+    "team": "Cleveland Browns",
+    "pick": "#74",
+    "height": "6'4\"",
+    "weight": "240 lbs",
+    "overallRank": 45,
+    "positionRank": 6,
+    "strengths": [
+      "Athletic pass-catcher; high yards after catch potential",
+      "Versatile alignment; flexes to slot for mismatches",
+      "Opportunity in Browns' offense with Njoku aging"
+    ],
+    "weaknesses": [
+      "Raw blocker; limited inline experience",
+      "Small-school adjustment to NFL speed",
+      "Inconsistent route-running"
+    ],
+    "comp": "Hunter Henry × Hayden Hurst"
+  },
+  {
+    "name": "Oronde Gadsden II",
+    "position": "TE",
+    "college": "Syracuse",
+    "team": "Los Angeles Chargers",
+    "pick": "#99",
+    "height": "6'5\"",
+    "weight": "230 lbs",
+    "overallRank": 46,
+    "positionRank": 7,
+    "strengths": [
+      "Big slot receiver; top yards per route run (5th 2024)",
+      "Strong receiving grade (7th 2024); mismatch weapon",
+      "Path to targets with Dissly/Conklin ahead"
+    ],
+    "weaknesses": [
+      "2023 foot injury shortened season",
+      "Depth chart delays immediate impact",
+      "Limited blocking; more WR than traditional TE"
+    ],
+    "comp": "Mo Alie-Cox × Jordan Reed"
+  },
+  {
+    "name": "Gunnar Helm",
+    "position": "TE",
+    "college": "Texas",
+    "team": "Tennessee Titans",
+    "pick": "#107",
+    "height": "6'5\"",
+    "weight": "245 lbs",
+    "overallRank": 49,
+    "positionRank": 8,
+    "strengths": [
+      "Athletic mover with size; red-zone threat",
+      "Reliable hands; adjusts to throws well",
+      "Upside with Cam Ward in Titans' offense"
+    ],
+    "weaknesses": [
+      "Raw route-runner; needs polish",
+      "Limited college production",
+      "Blocking technique inconsistent"
+    ],
+    "comp": "Cade Otton × Tucker Kraft"
+  },
+  {
+    "name": "Luke Lachey",
+    "position": "TE",
+    "college": "Iowa",
+    "team": "Houston Texans",
+    "pick": "#122",
+    "height": "6'6\"",
+    "weight": "250 lbs",
+    "overallRank": 50,
+    "positionRank": 9,
+    "strengths": [
+      "Inline blocker with size; three-down capable",
+      "Strong hands in traffic; red-zone upside",
+      "Opportunity behind Schultz in Texans' offense"
+    ],
+    "weaknesses": [
+      "Limited speed; not a YAC creator",
+      "Injury history from college",
+      "Route tree needs expansion"
+    ],
+    "comp": "Erick All × Luke Schoonmaker"
+  },
+  {
+    "name": "Mitchell Evans",
+    "position": "TE",
+    "college": "Notre Dame",
+    "team": "Carolina Panthers",
+    "pick": "#140",
+    "height": "6'5\"",
+    "weight": "245 lbs",
+    "overallRank": 51,
+    "positionRank": 10,
+    "strengths": [
+      "Versatile receiver/blocker; adjusts well",
+      "Reliable target; fits Panthers' young offense",
+      "High football IQ; red-zone potential"
+    ],
+    "weaknesses": [
+      "Average athleticism; limited burst",
+      "Needs to improve separation vs. LBs",
+      "Depth role initially behind Sanders"
+    ],
+    "comp": "Cole Kmet × Dawson Knox"
   }
 ]
