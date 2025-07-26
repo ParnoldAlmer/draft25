@@ -1213,7 +1213,7 @@
                         <div class="combine-metrics" data-player-name="${player.name}">
                             <h5>🏃‍♂️ Athletic Testing (Click for Details)</h5>
                             <div class="metrics-grid">
-                                ${player.combine.40yard ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine.40yard}s</span></div>` : ''}
+                                ${player.combine['40yard'] ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine['40yard']}s</span></div>` : ''}
                                 ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
                                 ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
                             </div>
@@ -1650,10 +1650,10 @@
                 </div>
                 
                 <div class="detailed-combine-grid">
-                    ${player.combine.40yard ? `
+                    ${player.combine['40yard'] ? `
                         <div class="detailed-metric">
                             <span class="detailed-metric-label">40-Yard Dash</span>
-                            <span class="detailed-metric-value">${player.combine.40yard}s</span>
+                            <span class="detailed-metric-value">${player.combine['40yard']}s</span>
                         </div>
                     ` : ''}
                     ${player.combine.vertical ? `
