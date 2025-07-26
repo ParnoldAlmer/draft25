@@ -969,6 +969,57 @@
             color: #666;
         }
         
+        /* Hold to draft/undraft styles */
+        .player-card {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        .player-card.holding {
+            animation: holdPulse 0.8s ease-in-out;
+            border-color: var(--green);
+            box-shadow: 0 0 20px rgba(52, 211, 153, 0.5);
+        }
+        
+        .player-card.drafted.holding {
+            animation: holdPulse 0.8s ease-in-out;
+            border-color: var(--red);
+            box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+        }
+        
+        @keyframes holdPulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(0.98);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .hold-indicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+            display: none;
+            z-index: 10;
+        }
+        
+        .player-card.holding .hold-indicator {
+            display: block;
+        }
+        
         /* Player Selection Modal */
         .player-select-modal {
             display: none;
@@ -1687,6 +1738,7 @@
                     ` : '';
                     
                     card.innerHTML = `
+                        <div class="hold-indicator">${player.drafted ? 'Hold to Undraft' : 'Hold to Draft'}</div>
                         <div class="player-header">
                             <div>
                                 <div class="player-name">${player.name}</div>
@@ -1820,6 +1872,12 @@
         
         // Add event delegation for combine modal clicks
         document.addEventListener('click', function(event) {
+            // Don't open combine modal if holding a card
+            const playerCard = event.target.closest('.player-card');
+            if (playerCard && playerCard.dataset.holding === 'true') {
+                return;
+            }
+            
             if (event.target.closest('.combine-metrics') || event.target.closest('.combine-data')) {
                 const element = event.target.closest('.combine-metrics') || event.target.closest('.combine-data');
                 const playerName = element.dataset.playerName;
@@ -2599,6 +2657,7 @@
                     ` : '';
                     
                     card.innerHTML = `
+                        <div class="hold-indicator">${player.drafted ? 'Hold to Undraft' : 'Hold to Draft'}</div>
                         <div class="player-header">
                             <div>
                                 <div class="player-name">${player.name}</div>
@@ -2639,12 +2698,135 @@
                         </div>
                     `;
                     
+                    // Add hold-to-draft/undraft functionality
+                    let holdTimer;
+                    let isHolding = false;
+                    
+                    const startHold = (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        isHolding = true;
+                        card.classList.add('holding');
+                        card.dataset.holding = 'true';
+                        
+                        holdTimer = setTimeout(() => {
+                            if (isHolding) {
+                                if (player.drafted) {
+                                    // Undraft the player
+                                    undraftPlayer(player.name);
+                                } else {
+                                    // Draft the player
+                                    quickDraftPlayer(player.name);
+                                }
+                                card.classList.remove('holding');
+                                delete card.dataset.holding;
+                            }
+                        }, 800); // 0.8 second hold
+                    };
+                    
+                    const endHold = () => {
+                        isHolding = false;
+                        clearTimeout(holdTimer);
+                        card.classList.remove('holding');
+                        delete card.dataset.holding;
+                    };
+                    
+                    // Touch events for mobile
+                    card.addEventListener('touchstart', startHold);
+                    card.addEventListener('touchend', endHold);
+                    card.addEventListener('touchcancel', endHold);
+                    
+                    // Mouse events for desktop
+                    card.addEventListener('mousedown', startHold);
+                    card.addEventListener('mouseup', endHold);
+                    card.addEventListener('mouseleave', endHold);
+                    
                     grid.appendChild(card);
                 } catch (error) {
                     console.error('Error rendering player:', player.name, error);
                 }
             });
         };
+        
+        // Quick draft player (from hold action)
+        function quickDraftPlayer(playerName) {
+            // Check if we're in an active draft
+            if (draftState.currentRound > draftState.totalRounds) {
+                alert('Draft is complete!');
+                return;
+            }
+            
+            const key = `${draftState.currentRound}-${draftState.currentPick}`;
+            const team = getTeamForPick(draftState.currentRound, draftState.currentPick);
+            
+            // Add to draft state
+            const pickData = {
+                round: draftState.currentRound,
+                pick: draftState.currentPick,
+                team: team.team,
+                player: playerName,
+                timestamp: new Date().toISOString()
+            };
+            
+            draftState.picks.push(pickData);
+            draftState.draftBoard[key] = pickData;
+            
+            // Mark player as drafted
+            const player = players.find(p => p.name === playerName);
+            if (player) {
+                player.drafted = true;
+            }
+            
+            // Advance to next pick
+            draftState.currentPick++;
+            if (draftState.currentPick > 12) {
+                draftState.currentPick = 1;
+                draftState.currentRound++;
+            }
+            
+            // Save state
+            saveDraftState();
+            
+            // Update displays
+            updateDraftBoard();
+            renderPlayers(currentFilter === 'all' ? players : 
+                players.filter(p => currentFilter === 'USC' ? p.college === 'USC' : p.position.includes(currentFilter)));
+        }
+        
+        // Undraft player (from hold action)
+        function undraftPlayer(playerName) {
+            // Find the pick with this player
+            const pickIndex = draftState.picks.findIndex(p => p.player === playerName);
+            if (pickIndex === -1) return;
+            
+            const pick = draftState.picks[pickIndex];
+            const key = `${pick.round}-${pick.pick}`;
+            
+            // Remove from draft state
+            draftState.picks.splice(pickIndex, 1);
+            delete draftState.draftBoard[key];
+            
+            // Unmark player as drafted
+            const player = players.find(p => p.name === playerName);
+            if (player) {
+                player.drafted = false;
+            }
+            
+            // Update current pick to the undrafted position if it's earlier than current
+            if (pick.round < draftState.currentRound || 
+                (pick.round === draftState.currentRound && pick.pick < draftState.currentPick)) {
+                draftState.currentRound = pick.round;
+                draftState.currentPick = pick.pick;
+            }
+            
+            // Save state
+            saveDraftState();
+            
+            // Update displays
+            updateDraftBoard();
+            renderPlayers(currentFilter === 'all' ? players : 
+                players.filter(p => currentFilter === 'USC' ? p.college === 'USC' : p.position.includes(currentFilter)));
+        }
         
         // Load draft state on page load
         loadDraftState();
