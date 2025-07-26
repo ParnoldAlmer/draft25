@@ -56,6 +56,53 @@
             opacity: 0.9;
         }
 
+        .countdown-container {
+            margin-top: 30px;
+        }
+
+        .countdown-label {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .time-unit {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 25px;
+            border-radius: 10px;
+            min-width: 80px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .time-value {
+            display: block;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--gold);
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .time-label {
+            display: block;
+            font-size: 0.8em;
+            margin-top: 5px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+
         .filters {
             display: flex;
             gap: 10px;
@@ -309,6 +356,27 @@
         <header>
             <h1>2025 Dynasty Rookie Draft Guide</h1>
             <div class="subtitle">Champions League Dynasty - July 26, 2025</div>
+            <div class="countdown-container">
+                <div class="countdown-label">Draft Starts In:</div>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <input type="text" class="search-box" placeholder="Search players by name, team, or college..." id="searchBox">
@@ -734,9 +802,35 @@
             }
         }
 
+        // Countdown Timer
+        function updateCountdown() {
+            const draftDate = new Date('July 26, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = draftDate - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<div class="time-value" style="font-size: 1.8em;">DRAFT DAY IS HERE!</div>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
         // Initialize
         document.getElementById('searchBox').addEventListener('input', searchPlayers);
         renderPlayers(players);
+        
+        // Start countdown
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
     </script>
 </body>
 </html>
