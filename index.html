@@ -388,6 +388,57 @@
             border-radius: 8px;
             font-size: 0.8em;
         }
+        
+        .combine-data {
+            background: var(--highlight) !important;
+            color: var(--text) !important;
+            font-weight: 600;
+        }
+        
+        .combine-metrics {
+            margin: 15px 0;
+            padding: 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            border-left: 3px solid var(--highlight);
+        }
+        
+        .combine-metrics h5 {
+            margin: 0 0 10px 0;
+            font-size: 0.85em;
+            font-weight: 600;
+            opacity: 0.9;
+            color: var(--highlight);
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 8px;
+        }
+        
+        .metric {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: rgba(255,255,255,0.08);
+            padding: 6px 4px;
+            border-radius: 6px;
+        }
+        
+        .metric-label {
+            font-size: 0.7em;
+            opacity: 0.7;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .metric-value {
+            font-size: 0.8em;
+            font-weight: 600;
+            color: var(--gold);
+        }
 
         .strengths-weaknesses {
             margin: 15px 0;
@@ -1110,7 +1161,23 @@
                     <div class="player-measurements">
                         <span>${player.height}</span>
                         <span>${player.weight}</span>
+                        ${player.combine && player.combine.source !== 'TBD' ? `<span class="combine-data">📊 ${player.combine.source}</span>` : ''}
                     </div>
+                    ${player.combine ? `
+                    <div class="combine-metrics">
+                        <h5>🏃‍♂️ Athletic Testing</h5>
+                        <div class="metrics-grid">
+                            ${player.combine.40yard ? `<div class="metric"><span class="metric-label">40-Yard</span><span class="metric-value">${player.combine.40yard}s</span></div>` : ''}
+                            ${player.combine.vertical ? `<div class="metric"><span class="metric-label">Vertical</span><span class="metric-value">${player.combine.vertical}</span></div>` : ''}
+                            ${player.combine.broad ? `<div class="metric"><span class="metric-label">Broad</span><span class="metric-value">${player.combine.broad}</span></div>` : ''}
+                            ${player.combine.threeCone ? `<div class="metric"><span class="metric-label">3-Cone</span><span class="metric-value">${player.combine.threeCone}s</span></div>` : ''}
+                            ${player.combine.bench ? `<div class="metric"><span class="metric-label">Bench</span><span class="metric-value">${player.combine.bench}</span></div>` : ''}
+                            ${player.combine.shuttle ? `<div class="metric"><span class="metric-label">20-Yard</span><span class="metric-value">${player.combine.shuttle}s</span></div>` : ''}
+                            ${player.combine.armLength ? `<div class="metric"><span class="metric-label">Arms</span><span class="metric-value">${player.combine.armLength}</span></div>` : ''}
+                            ${player.combine.handSize ? `<div class="metric"><span class="metric-label">Hands</span><span class="metric-value">${player.combine.handSize}</span></div>` : ''}
+                        </div>
+                    </div>
+                    ` : ''}
                     <div class="strengths-weaknesses">
                         <div class="strengths">
                             <h4>✅ Strengths</h4>

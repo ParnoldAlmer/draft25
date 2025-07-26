@@ -9,6 +9,17 @@
     "weight": "215 lbs",
     "overallRank": 1,
     "positionRank": 1,
+    "combine": {
+      "40yard": "4.58",
+      "bench": null,
+      "vertical": "35.5\"",
+      "broad": "10'2\"",
+      "threeCone": null,
+      "shuttle": null,
+      "armLength": "30 1/8\"",
+      "handSize": "9 1/4\"",
+      "source": "Pro Day"
+    },
     "strengths": [
       "Elite contact balance and YAC ability",
       "Explosive vision and acceleration",
@@ -31,6 +42,17 @@
     "weight": "223 lbs",
     "overallRank": 2,
     "positionRank": 2,
+    "combine": {
+      "40yard": null,
+      "bench": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "armLength": "32 1/4\"",
+      "handSize": "9 3/8\"",
+      "source": "TBD"
+    },
     "strengths": [
       "Elite arm talent with velocity and accuracy",
       "Strong improviser who extends plays",
@@ -53,6 +75,17 @@
     "weight": "185 lbs",
     "overallRank": 3,
     "positionRank": 2,
+    "combine": {
+      "40yard": "4.44",
+      "bench": null,
+      "vertical": "39\"",
+      "broad": "10'6\"",
+      "threeCone": "6.85",
+      "shuttle": null,
+      "armLength": "32 1/2\"",
+      "handSize": "9 1/8\"",
+      "source": "Pro Day"
+    },
     "strengths": [
       "Unicorn versatility as CB/WR",
       "Elite ball skills and football IQ",
